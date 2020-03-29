@@ -11,12 +11,12 @@ body {
   padding: 40px 8%;
 }
 
-h1 {
+.h1 {
   font-size: 48px;
   text-transform: uppercase;
 }
 
-h2 {
+.h2 {
   font-size: 35px;
   margin-bottom: 20px;
 }
@@ -83,10 +83,10 @@ p {
   .container {
     padding: 28px 8% 40px;
   }
-  h1 {
+  .h1 {
     font-size: 27px;
   }
-  h2 {
+  .h2 {
     font-size: 25px;
   }
   .preview {
