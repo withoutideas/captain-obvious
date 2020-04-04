@@ -1,63 +1,49 @@
 .preview
-    max-width: 720px
-    margin: 0px auto 120px
+    margin-bottom: 120px
 
-    //background: grey
-    
-    &-heading
-        margin-bottom: 18px
-
-        &-text
-    
-    &-content
-        margin-bottom: 30px
-
-        &-text
-        
-            &_h2
-                font-size: 35px
-                margin-bottom: 36px
-    
     &-buttons
         height: 42px
-        //margin-top: 30px
+        margin-top: 30px
+
+        font-size: 0 //Уберает пробелы между блочно-строчными элементами
     
     &-button
         display: inline-block
         width: 145px
         height: 40px
-        //padding: 0px 20px
         border: 1px solid black
         
+        text-decoration: none
         font-size: 11px
         line-height: 40px
         text-align: center
         text-transform: uppercase
+        user-select: none
 
-        transition: all .1s ease-in-out
+        //transition: all .1s ease-in-out
         
         &_read-on
             margin: 0px 15px 0px 0px
-
-            text-decoration: none
 
             //color: white
             //background: black
         
         &_read-later
-        
-.link
-    display: inline-block
-    width: 145px
-    height: 40px
-    //padding: 0px 20px
-    border: 1px solid black
-        
-    font-size: 11px
-    line-height: 40px
-    text-align: center
-    text-transform: uppercase
 
-    margin: 0px 15px 0px 0px
+@media (max-width: 480px)
+    .preview
+        width: 100%
 
-    &_link-buttons
+        &-buttons
+            display: flex
+            flex-direction: column
+
+            height: 99px
+
+        &-button
+            width: auto
+
+            &_read-on
+                margin: 0px 0px 15px
+
+            &_read-later
