@@ -8,7 +8,7 @@ article
         display: flex
         margin-top: 30px
 
-        font-size: 0 //Уберает пробелы между блочно-строчными элементами
+        font-size: 0 // уберает пробелы между блочно-строчными элементами
 
     &-button
         //flex: 1
@@ -16,14 +16,8 @@ article
         height: 48px
 
         min-width: 125px
-        border: 1px solid black
 
-        text-decoration: none
-        font-size: 11px
         line-height: 48px
-        text-align: center
-        text-transform: uppercase
-        user-select: none
 
         &_1
             margin-right: 15px
@@ -33,6 +27,14 @@ article
 
         &_3
 
+img
+    //display: block
+
+    width: 100%
+    //margin: 0px auto 15px
+    margin-bottom: 15px
+    //border: 2px solid $key
+
 @media (max-width: 480px)
     .article
 
@@ -41,6 +43,7 @@ article
 
         &-button
             height: 38px
+            width: auto
 
             line-height: 38px
 
