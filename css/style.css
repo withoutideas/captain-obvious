@@ -10,7 +10,7 @@ main {
 }
 
 .container {
-  padding: 140px 8% 40px;
+  padding: 116px 8% 40px;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 
 p {
   margin-bottom: 15px;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.6;
   color: #444444;
 }
