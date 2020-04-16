@@ -45,7 +45,7 @@ h2 {
 }
 
 .link:hover {
-  color: #1e6610;
+  color: #318436;
 }
 
 @media (max-width: 480px) {
@@ -60,7 +60,7 @@ h2 {
 .button {
   width: 145px;
   height: 40px;
-  border: 1px solid #1e6610;
+  border: 1px solid #318436;
   text-decoration: none;
   font-size: 11px;
   line-height: 40px;
@@ -71,15 +71,16 @@ h2 {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  color: #1e6610;
+  color: #318436;
 }
 
 header {
   position: fixed;
   top: 0px;
+  z-index: 1;
   width: 100%;
   height: 76px;
-  background-color: #1e6610;
+  background-color: #318436;
 }
 
 header > .container {
@@ -179,7 +180,7 @@ img {
 .excerpt-button_read-on {
   margin: 0px 15px 0px 0px;
   color: white;
-  background-color: #1e6610;
+  background-color: #318436;
 }
 
 .excerpt-button_load-more {
