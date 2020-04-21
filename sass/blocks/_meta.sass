@@ -1,0 +1,35 @@
+.meta
+    margin: 0px 0px 20px
+
+    user-select: none
+
+    &-tag
+        display: inline-block
+
+        margin: 0px 8px 0px 0px
+
+        font-size: 14px
+        line-height: 1.5
+        color: $lightest-grey
+
+        &_author
+            user-select: auto
+
+        &_category
+            user-select: auto
+        
+        &_date
+
+        &_time
+            margin: 0px
+
+        &_time:after
+            display: none
+
+        &-link
+            color: $lightest-grey
+
+    &-tag:after
+        position: relative
+        right: -6px
+        content: "/"

@@ -1,0 +1,26 @@
+.page
+    padding: 110px 0px 30px
+    //position: relative
+
+    &-tag
+        position: relative
+
+        //margin: 0px 0px 0px
+
+        font-size: 14px
+        font-weight: bold
+        text-align: center
+        text-transform: uppercase
+        color: $lightest-grey
+        user-select: none
+
+    &-tag:after
+        position: absolute
+        bottom: -40px
+        left: 50%
+        display: block
+        content: ""
+        height: 2px
+        width: 50px
+        margin-left: -25px
+        background-color: $light-green
