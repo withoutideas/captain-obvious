@@ -1,0 +1,43 @@
+.menu-button
+    position: relative
+    width: 20px
+    height: 2px
+
+    background-color: white
+
+.menu-button:before
+    position: absolute
+    top: -8px
+    left: 0px
+
+    display: block
+    content: ""
+    width: 20px
+    height: 2px
+
+    background-color: white
+
+.menu-button:after
+    position: absolute
+    top: 8px
+    left: 0px
+
+    display: block
+    content: ""
+    width: 20px
+    height: 2px
+
+    background-color: white
+
+.menu-button.menu-button_active
+    background-color: transparent
+
+.menu-button.menu-button_active:before
+    top: 0px
+
+    transform: rotate(45deg)
+
+.menu-button.menu-button_active:after
+    top: 0px
+
+    transform: rotate(-45deg)

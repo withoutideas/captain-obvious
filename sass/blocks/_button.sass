@@ -1,7 +1,7 @@
 .button
+    display: inline-block
     width: 145px
     height: 40px
-    border: 1px solid $key-green
     padding: 0px 25px
         
     text-decoration: none
@@ -10,5 +10,67 @@
     font-weight: bold
     text-align: center
     text-transform: uppercase
-    user-select: none
+    
     color: $key-green
+    
+    user-select: none
+        
+    &_read-on
+        margin: 0px 15px 0px 0px
+
+        color: white
+        background-color: $key-green
+    
+    &_read-later
+        border: 1px solid $key-green
+    
+    &_load-more
+        display: block
+        margin: 0px auto 0px
+
+        color: white
+        background-color: black
+
+    &_share
+        //flex: 1
+        width: 100%
+        height: 50px
+
+        min-width: 125px
+
+        line-height: 48px
+            
+        &_1
+            margin-right: 15px
+
+        &_2
+            margin-right: 15px
+
+        &_3
+
+@media (max-width: 480px)
+    .button
+        width: auto
+
+        &_read-on
+            margin: 0px 0px 15px
+
+        &_read-later
+
+        &_load-more
+            width: 145px
+
+        &_share
+            height: 38px
+
+            line-height: 38px
+            
+            &_1
+                margin-right: 0px
+                margin-bottom: 15px
+
+            &_2
+                margin-right: 0px
+                margin-bottom: 15px
+
+            &_3

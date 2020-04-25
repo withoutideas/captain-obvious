@@ -3,7 +3,7 @@
 
     user-select: none
 
-    &-tag
+    &__tag
         display: inline-block
 
         margin: 0px 8px 0px 0px
@@ -13,10 +13,8 @@
         color: $lightest-grey
 
         &_author
-            user-select: auto
 
         &_category
-            user-select: auto
         
         &_date
 
@@ -26,10 +24,11 @@
         &_time:after
             display: none
 
-        &-link
+        &_link
             color: $lightest-grey
 
-    &-tag:after
+    &__tag:after
         position: relative
         right: -6px
+        
         content: "/"
