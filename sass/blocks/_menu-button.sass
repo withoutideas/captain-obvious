@@ -1,33 +1,34 @@
 .menu-button
     position: relative
+    
     width: 20px
     height: 2px
 
-    background-color: white
+    background-color: $color-white
 
-.menu-button:before
-    position: absolute
-    top: -8px
-    left: 0px
+    &:before
+        position: absolute
+        top: -8px
+        left: 0px
 
-    display: block
-    content: ""
-    width: 20px
-    height: 2px
+        display: block
+        content: ""
+        width: 20px
+        height: 2px
 
-    background-color: white
+        background-color: $color-white
 
-.menu-button:after
-    position: absolute
-    top: 8px
-    left: 0px
+    &:after
+        position: absolute
+        top: 8px
+        left: 0px
 
-    display: block
-    content: ""
-    width: 20px
-    height: 2px
+        display: block
+        content: ""
+        width: 20px
+        height: 2px
 
-    background-color: white
+        background-color: $color-white
 
 .menu-button.menu-button_active
     background-color: transparent

@@ -1,36 +1,33 @@
 .excerpt
     position: relative
-
     padding: 60px 0px
 
-    &__button-group
-        height: 40px
-        margin: 30px 0px 0px
+    &__title
+        margin: 0px 0px 20px
 
-        font-size: 0 // уберает пробелы между блочно-строчными элементами
+    &__content
+        margin: 0px 0px 30px
+
+    &__read-button-group
+        display: flex
     
     &:before
-        z-index: -1
+        z-index: 0
         position: absolute
         top: 0px
         left: 50%
 
         display: block
         content: ""
-        height: 2px
         width: 50px
-        margin-left: -25px
+        height: 2px
+        margin: 0px 0px 0px -25px
 
-        background-color: $light-green
+        background-color: $color-lightgray
 
 @media (max-width: 480px)
     .excerpt
-        //width: 100%
         padding: 40px 0px
 
-        &__button-group
-            display: flex
-
-            height: 95px
-            
+        &__read-button-group
             flex-direction: column

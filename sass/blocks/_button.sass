@@ -1,52 +1,52 @@
 .button
-    display: inline-block
     width: 145px
     height: 40px
     padding: 0px 25px
         
-    text-decoration: none
     font-size: 11px
-    line-height: 40px
     font-weight: bold
+    line-height: 40px
+    text-decoration: none
     text-align: center
     text-transform: uppercase
-    
-    color: $key-green
     
     user-select: none
         
     &_read-on
         margin: 0px 15px 0px 0px
 
+        background-color: $key-color-green
         color: white
-        background-color: $key-green
     
     &_read-later
-        border: 1px solid $key-green
+        border: 1px solid $key-color-green
+        
+        //background-color: $key-color-green
+        color: $key-color-green
     
     &_load-more
-        display: block
-        margin: 0px auto 0px
-
-        color: white
-        background-color: black
+        background-color: $color-black
+        color: $color-white
 
     &_share
         //flex: 1
         width: 100%
+        min-width: 125px
         height: 50px
 
-        min-width: 125px
-
         line-height: 48px
+        color: white
             
-        &_1
-            margin-right: 15px
+        &_facebook
+            margin: 0px 15px 0px 0px
+            background-color: $color-facebook
 
-        &_2
-            margin-right: 15px
+        &_instagram
+            margin: 0px 15px 0px 0px
+            background-color: $color-instagram
 
-        &_3
+        &_telegram
+            background-color: $color-telegram
 
 @media (max-width: 480px)
     .button
@@ -62,15 +62,12 @@
 
         &_share
             height: 38px
-
             line-height: 38px
             
-            &_1
-                margin-right: 0px
-                margin-bottom: 15px
+            &_facebook
+                margin: 0px 0px 15px 0px
 
-            &_2
-                margin-right: 0px
-                margin-bottom: 15px
+            &_instagram
+                margin: 0px 0px 15px 0px
 
-            &_3
+            &_telegram

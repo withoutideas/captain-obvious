@@ -1,0 +1,36 @@
+.nav-button
+    position: relative
+    
+    width: 20px
+    height: 18px
+
+    float: right
+    //background-color: $color-white
+
+    &:before
+        position: absolute
+        top: 9px
+        left: 1px
+
+        display: block
+        content: ""
+        width: 11px
+        height: 2px
+
+        background-color: $color-white
+
+        transform: rotate(45deg)
+
+    &:after
+        position: absolute
+        top: 9px
+        left: 8px
+
+        display: block
+        content: ""
+        width: 11px
+        height: 2px
+
+        background-color: $color-white
+
+        transform: rotate(-45deg)
