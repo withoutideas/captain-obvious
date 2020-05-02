@@ -68,8 +68,8 @@ img {
   max-width: 720px;
   margin: 0px auto;
   padding: 120px 0px 0px;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
 }
 
 .page__tag-title {
@@ -211,14 +211,19 @@ img {
 }
 
 .header {
+  z-index: 1;
   position: fixed;
   top: 0px;
-  z-index: 1;
+  left: 0px;
+  width: 100%;
+  height: 70px;
+  background-color: #49654C;
+}
+
+.header__sidebar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  height: 70px;
   background-color: #49654C;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -305,12 +310,13 @@ img {
   left: 0px;
   display: block;
   width: 100%;
-  height: 0px;
+  height: 200px;
   font-size: 16px;
   background-color: #49654C;
-  overflow: hidden;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
 }
 
 .navigation__item {
@@ -323,8 +329,52 @@ img {
   color: #FFFFFF;
 }
 
+.navigation__link_authors {
+  display: inline-block;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+
+.navigation__link_categories {
+  display: inline-block;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+
 .navigation_active {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.navigation2 {
+  z-index: -1;
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  display: block;
+  width: 100%;
   height: 200px;
+  font-size: 16px;
+  background-color: #49654C;
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.navigation2__item {
+  height: 35px;
+  margin: 0px 0px 10px;
+}
+
+.navigation2__link {
+  line-height: 35px;
+  color: #FFFFFF;
+}
+
+.navigation2_active {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 .nav-button {
