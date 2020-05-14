@@ -13,52 +13,51 @@
         <div class="header__menu">
             <div class="menu-button"></div>
         </div>
+        
+        <!-- <label>
+            <input type="checkbox">
+            <span class="check"></span>
+        </label> -->
 
         <nav class="header__nav nav">
             <ul class="nav__list">
-                <li class="nav__item">
-                    <div href="#" class="nav__link">Switch to ukrainian version</div>
-                </li>
-                <!-- /.nav__item -->
-                <li class="nav__item">
-                    <div href="#" class="nav__link">Use dark theme</div>
-
-                    <!-- <label>
-                        <input type="checkbox">
-                        <span class="check"></span>
-                    </label> -->
-                </li>
-                <!-- /.nav__item -->
-                <li class="nav__item nav__item_categories">
-                    <div href="#" class="nav__link nav__link_categories">Categories</div>
-
-                    <div class="nav-button nav-button_categories"></div>
-
-                    <ul class="nav__list_nested">
-                        <li class="nav__item">Category</li>
-                        <li class="nav__item">Category</li>
-                        <li class="nav__item">Category</li>
-                        <li class="nav__item">Category</li>
-                        <li class="nav__item">Category</li>
+                <li class="nav__item" id="item_categories">
+                    <div class="nav__button" id="nav__button_categories">
+                        <div class="">Categories</div>
+                        <div class="nav-button" id="button_categories"></div>
+                    </div>
+                    
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
                     </ul>
                 </li>
-                <!-- /.nav__item nav__item_categories -->
-                <li class="nav__item nav__item_authors">
-                    <div href="#" class="nav__link nav__link">Authors</div>
 
-                    <div class="nav-button nav-button_authors"></div>
-
-                    <ul class="nav__list_nested">
-                        <li class="nav__item">Author</li>
-                        <li class="nav__item">Author</li>
-                        <li class="nav__item">Author</li>
+                <li class="nav__item" id="item_authors">
+                    <div class="nav__button" id="nav__button_authors">
+                        <div class="">Authors</div>
+                        <div class="nav-button" id="button_authors"></div>
+                    </div>
+                    
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#">Author</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Author</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Author</a></li>
                     </ul>
                 </li>
-                <!-- /.nav__item nav__item_authors -->
+
+                <li class="nav__item">
+                    <div class="">Language selection</div>
+                </li>
+
+                <li class="nav__item">
+                    <div class="">Theme selection</div>
+                </li>
             </ul>
-            <!-- /.nav__list -->
         </nav>
-        <!-- /.nav -->
     </header>
     <main class="main">
         <div class="main__content">
@@ -158,6 +157,7 @@
     </main>
     <footer class="footer">
     </footer>
+    
     <script src="js/main.js"></script>
 </body>
 </html>
