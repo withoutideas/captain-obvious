@@ -1,141 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
-    <title>captain-obvious/latest-stories</title>
+    <title>captain-obvious latest-stories</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<header class="wrapper header">
-    <div class="header__sidebar">
+<body class="page">
+    <header class="page__header header">
         <a class="header__logo" href="index.html">Captain obvious</a>
         
         <div class="header__menu">
             <div class="menu-button"></div>
         </div>
-    </div>
-    <nav class="wrapper navigation">
-        <div class="navigation__item">
-            <div href="#" class="navigation__link">Switch to ukrainian version</div>
-        </div>
-        <div class="navigation__item">
-            <div href="#" class="navigation__link">Switch to dark theme</div>
-            <!-- <label>
-                <input type="checkbox">
-                <span class="check"></span>
-            </label> -->
-        </div>
-        <div class="navigation__item">
-            <div href="#" class="navigation__link_authors">Authors</div>
-            <div class="nav-button"></div>
-        </div>
-        <div class="navigation__item">
-            <div href="#" class="navigation__link_categories">Сategories</div>
-            <div class="nav-button"></div>
-        </div>
-    </nav>
-</header>
-<main class="wrapper main">
-    <div class="page">
-        <div class="page__tag-title">Latest stories</div>
-        <!-- /.page__tag-title -->
-        <div class="page__content">
-            <section class="excerpt">
-                <div class="excerpt__title">
-                    <h1>Knights, I bid you welcome to your new home</h1>
+        
+        <!-- <label>
+            <input type="checkbox">
+            <span class="check"></span>
+        </label> -->
+
+        <nav class="header__nav nav">
+            <ul class="nav__list">
+                <li class="nav__item" id="item_categories">
+                    <div class="nav__button" id="nav__button_categories">
+                        <div class="">Categories</div>
+                        <div class="nav-button" id="button_categories"></div>
+                    </div>
+                    
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav__item" id="item_authors">
+                    <div class="nav__button" id="nav__button_authors">
+                        <div class="">Authors</div>
+                        <div class="nav-button" id="button_authors"></div>
+                    </div>
+                    
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#">Author</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Author</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Author</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav__item">
+                    <div class="">Language selection</div>
+                </li>
+
+                <li class="nav__item">
+                    <div class="">Theme selection</div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main__content">
+            <div class="publication-wall">
+                <h1 class="publication-wall__title">Latest stories</h1>
+                <section class="publication-preview">
+                    <h2 class="publication-preview__title">
+                        Knights, I bid you welcome to your new home
+                    </h2>
+
                     <div class="meta">
                         <div class="meta__tag meta__tag_author">By <a class="meta__tag_link" href="#">Madison Barnett</a></div>
                         <div class="meta__tag meta__tag_category">In <a class="meta__tag_link" href="#">Business</a></div>
                         <div class="meta__tag meta__tag_time">2 Min Read</div>
                     </div>
-                </div>
-                <!-- /.excerpt__title -->
-                <div class="excerpt__content">
-                    <p>
-                        Credibly customize visionary niches before alternative services.
-                        Compellingly restore effective total linkage with sticky resources.
-                        Appropriately reconceptualize multifunctional leadership skills
-                        without turnkey outsourcing. Continually restore cross functional
-                        results through transparent models. Phosfluorescently seize 2.0 leadership
-                        for viral content. Dynamically disseminate customer directed...
-                    </p>
-                </div>
-                <!-- /.excerpt__content -->
-                <div class="excerpt__read-button-group">
-                    <a class="button button_read-on" href="article.html">Read  on</a>
-                    <a class="button button_read-later" href="#">Download</a>
-                </div>
-                <!-- /.excerpt__read -->
-            </section>
-            <!-- /.excerpt -->
-            <section class="excerpt">
-                <div class="excerpt__title">
-                    <h1>Knights, I bid you welcome to your new home</h1>
+
+                    <div class="publication-preview__content">
+                        <p>
+                            Credibly customize visionary niches before alternative services.
+                            Compellingly restore effective total linkage with sticky resources.
+                            Appropriately reconceptualize multifunctional leadership skills
+                            without turnkey outsourcing. Continually restore cross functional
+                            results through transparent models. Phosfluorescently seize 2.0
+                            for viral content. Dynamically disseminate customer directed...
+                        </p>
+                    </div>
+
+                    <div class="publication-preview__button-group">
+                        <a class="button button_read-on" href="publication.html">Read  on</a>
+                        <a class="button button_read-later" href="#">Download</a>
+                    </div>
+                </section>
+                <section class="publication-preview">
+                    <h2 class="publication-preview__title">
+                        Knights, I bid you welcome to your new home
+                    </h2>
+
                     <div class="meta">
                         <div class="meta__tag meta__tag_author">By <a class="meta__tag_link" href="#">Madison Barnett</a></div>
                         <div class="meta__tag meta__tag_category">In <a class="meta__tag_link" href="#">Business</a></div>
                         <div class="meta__tag meta__tag_time">2 Min Read</div>
                     </div>
-                </div>
-                <!-- /.excerpt__title -->
-                <div class="excerpt__content">
-                    <p>
+
+                    <p class="publication-preview__text">
                         Credibly customize visionary niches before alternative services.
                         Compellingly restore effective total linkage with sticky resources.
                         Appropriately reconceptualize multifunctional leadership skills
                         without turnkey outsourcing. Continually restore cross functional
-                        results through transparent models. Phosfluorescently seize 2.0 leadership
+                        results through transparent models. Phosfluorescently seize 2.0
                         for viral content. Dynamically disseminate customer directed...
                     </p>
-                </div>
-                <!-- /.excerpt__content -->
-                <div class="excerpt__read-button-group">
-                    <a class="button button_read-on" href="article.html">Read on</a>
-                    <a class="button button_read-later" href="#">save</a>
-                </div>
-                <!-- /.excerpt__read -->
-            </section>
-            <!-- /.excerpt -->
-            <section class="excerpt">
-                <div class="excerpt__title">
-                    <h1>Knights, I bid you welcome to your new home</h1>
-                    <div class="meta">
-                        <div class="meta__tag meta__tag_author">By <a class="meta__tag_link" href="#">Madison Barnett</a></div>
-                        <div class="meta__tag meta__tag_category">In <a class="meta__tag_link" href="#">Business</a></div>
-                        <div class="meta__tag meta__tag_time">2 Min Read</div>
+
+                    <div class="publication-preview__button-group">
+                        <a class="button button_read-on" href="publication.html">Read on</a>
+                        <a class="button button_read-later" href="#">Read later</a>
                     </div>
+                </section>
+                <div class="publication-wall__button">
+                    <a class="button button_load-more" href="#">Load more</a>
                 </div>
-                <!-- /.excerpt__title -->
-                <div class="excerpt__content">
-                    <p>
-                        Credibly customize visionary niches before alternative services.
-                        Compellingly restore effective total linkage with sticky resources.
-                        Appropriately reconceptualize multifunctional leadership skills
-                        without turnkey outsourcing. Continually restore cross functional
-                        results through transparent models. Phosfluorescently seize 2.0 leadership
-                        for viral content. Dynamically disseminate customer directed...
-                    </p>
-                </div>
-                <!-- /.excerpt__content -->
-                <div class="excerpt__read-button-group">
-                    <a class="button button_read-on" href="article.html">Read on</a>
-                    <a class="button button_read-later" href="#">Read later</a>
-                </div>
-                <!-- /.excerpt__read -->
-            </section>
-            <!-- /.excerpt -->
+            </div>
         </div>
-        <!-- /.page__content -->
-        <div class="page__load-more-button">
-            <a class="button button_load-more" href="#">Load more</a>
-        </div>
-        <!-- /.page__load-more -->
-    </div>
-    <!-- /.page -->
-</main>
-<footer class="wrapper footer">
-</footer>
-<script src="js/main.js"></script>
+    </main>
+    <footer class="footer">
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

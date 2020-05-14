@@ -1,14 +1,17 @@
 .meta
+    display: flex
+    margin: 8px 0px 20px
+
+    flex-wrap: wrap
+    
     user-select: none
 
     &__tag
-        display: inline-block
-
-        margin: 0px 8px 0px 0px
+        margin: 0px 10px 0px 0px
 
         font-size: 14px
         line-height: 1.5
-        color: $color-lightgray
+        color: var(--lightgray)
 
         &_author
 
@@ -23,10 +26,12 @@
             display: none
 
         &_link
-            color: $color-lightgray
+            color: var(--lightgray)
+            text-decoration: none
 
     &__tag:after
         position: relative
         right: -6px
         
         content: "/"
+        font-family: NullFont

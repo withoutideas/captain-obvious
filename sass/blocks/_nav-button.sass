@@ -1,11 +1,9 @@
 .nav-button
     position: relative
+    z-index: 2
     
     width: 20px
     height: 18px
-
-    float: right
-    //background-color: $color-white
 
     &:before
         position: absolute
@@ -17,7 +15,7 @@
         width: 11px
         height: 2px
 
-        background-color: $color-white
+        background-color: var(--white)
 
         transform: rotate(45deg)
 
@@ -31,6 +29,9 @@
         width: 11px
         height: 2px
 
-        background-color: $color-white
+        background-color: var(--white)
 
         transform: rotate(-45deg)
+
+    &_active
+        transform: rotate(180deg)

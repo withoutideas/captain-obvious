@@ -1,0 +1,44 @@
+.publication-preview
+    position: relative
+
+    padding: 60px 0px
+
+    &__title
+        margin: 0px
+        
+        font-size: 48px
+        line-height: 1.2
+        text-transform: uppercase
+        color: var(--darkgray)
+
+    &__content p
+        margin: 0px
+
+    &__button-group
+        display: flex
+        margin: 30px 0px 0px
+    
+    &:before
+        z-index: 0
+        position: absolute
+        top: 0px
+        left: 50%
+
+        display: block
+        content: ""
+        width: 50px
+        height: 2px
+        margin: 0px 0px 0px -25px
+
+        background-color: var(--lightgray)
+
+@media (max-width: 480px)
+    .publication-preview
+        padding: 40px 0px
+
+        &__title
+            font-size: 27px
+            //line-height: 1.2
+
+        &__button-group
+            flex-direction: column

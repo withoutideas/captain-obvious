@@ -1,52 +1,60 @@
 .button
     width: 145px
     height: 40px
-    padding: 0px 25px
         
     font-size: 11px
     font-weight: bold
     line-height: 40px
     text-decoration: none
-    text-align: center
     text-transform: uppercase
+    text-align: center
+
+    //border-radius: 2px
     
     user-select: none
         
     &_read-on
         margin: 0px 15px 0px 0px
 
-        background-color: $key-color-green
         color: white
+
+        background-color: var(--primary)
     
     &_read-later
-        border: 1px solid $key-color-green
+        color: var(--primary)
         
-        //background-color: $key-color-green
-        color: $key-color-green
+        border: 1px solid var(--primary)
     
     &_load-more
-        background-color: $color-black
-        color: $color-white
+        color: var(--white)
+
+        background-color: var(--black)
 
     &_share
-        //flex: 1
-        width: 100%
-        min-width: 125px
+        display: flex
         height: 50px
 
-        line-height: 48px
         color: white
+        
+        flex: 1
+        justify-content: center
+        align-items: center
+
+        & svg
+            width: 
+            height: 
             
         &_facebook
-            margin: 0px 15px 0px 0px
-            background-color: $color-facebook
+            margin: 0px 15px 15px 0px
+            background-color: var(--facebook)
 
         &_instagram
-            margin: 0px 15px 0px 0px
-            background-color: $color-instagram
+            margin: 0px 0px 15px
+            background-color: var(--instagram)
 
         &_telegram
-            background-color: $color-telegram
+            min-width: 100%
+            background-color: var(--telegram)
 
 @media (max-width: 480px)
     .button
@@ -65,9 +73,9 @@
             line-height: 38px
             
             &_facebook
-                margin: 0px 0px 15px 0px
+                //margin: 0px 0px 15px 0px
 
             &_instagram
-                margin: 0px 0px 15px 0px
+                //margin: 0px 0px 15px 0px
 
             &_telegram

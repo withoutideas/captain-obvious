@@ -1,0 +1,52 @@
+.publication
+    padding: 120px 0px 80px
+
+    &__title
+        margin: 0px
+        
+        font-size: 48px
+        line-height: 1.2
+        text-transform: uppercase
+        color: var(--darkgray)
+
+    &__content h2
+        margin: 0px 0px 15px
+        
+        font-size: 35px
+        line-height: 1.2
+        text-transform: uppercase
+        color: var(--darkgray)
+
+    &__content p
+        margin: 0px 0px 30px
+
+    &__content a
+        text-decoration: none
+
+    &__content img
+        display: block
+        width: 100%
+        margin: 0px 0px 30px
+
+        user-select: none
+
+    &__button-group
+        display: flex
+        margin: 40px 0px 0px
+
+        flex-wrap: wrap
+        justify-content: space-between
+    
+@media (max-width: 480px)
+    .publication
+        
+        & h1
+            font-size: 27px
+            //line-height: 1.2
+
+        & h2
+            font-size: 25px
+            //line-height:
+
+        &__button-group
+            //flex-direction: column

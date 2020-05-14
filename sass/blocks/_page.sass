@@ -1,59 +1,18 @@
 .page
-    //position: relative
+    min-height: 100%
+    margin: 0px
 
-    max-width: 720px
-    margin: 0px auto
-
-    padding: 120px 0px 0px
+    font-family: Sen //font: normal 16px/1.75 "Sen"//, sans-serif
+    font-size: 16px
+    line-height: 1.7
+    color: var(--gray)
+    flex: 1
     
-    transition: 0.5s ease-out
+    &__header
+        z-index: 1
+        position: fixed
+        top: 0px
+        left: 0px
 
-    &__tag-title
-        position: relative
-
-        margin: 0px 0px 40px
-
-        font-size: 16px
-        font-weight: bold
-        text-transform: uppercase
-        text-align: center
-        color: $color-lightgray
-        
-        user-select: none
-    
-    &__title
-        margin: 0px 0px 20px
-
-    &__content
-        margin: 0px 0px 40px
-
-    &__load-more-button
-        display: flex
-        justify-content: center
-        
-        padding: 0px 0px 80px
-
-    &__share-button-group
-        display: flex
-        padding: 0px 0px 80px
-        //font-size: 0 // уберает пробелы между блочно-строчными элементами
-
-.page_adroop
-    padding: 320px 0px 0px
-
-@media (max-width: 480px)
-    .page
-        //padding: 100px 0px 0px
-
-        &__tag-title
-            margin: 0px 0px 25px
-
-        &__content
-            margin: 0px 0px 30px
-
-        &__load-more-button
-            padding: 0px 0px 50px
-
-        &__share-button-group
-            flex-direction: column
-            padding: 0px 0px 50px
+    //& a
+        text-decoration: none
