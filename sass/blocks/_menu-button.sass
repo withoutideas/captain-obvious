@@ -6,7 +6,7 @@
 
     background-color: var(--white)
 
-    &:before
+    &::before
         position: absolute
         top: -8px
         left: 0px
@@ -18,7 +18,7 @@
 
         background-color: var(--white)
 
-    &:after
+    &::after
         position: absolute
         top: 8px
         left: 0px
@@ -33,12 +33,12 @@
 .menu-button.menu-button_active
     background-color: transparent
 
-.menu-button.menu-button_active:before
+.menu-button.menu-button_active::before
     top: 0px
 
     transform: rotate(45deg)
 
-.menu-button.menu-button_active:after
+.menu-button.menu-button_active::after
     top: 0px
 
     transform: rotate(-45deg)

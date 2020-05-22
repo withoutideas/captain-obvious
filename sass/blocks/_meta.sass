@@ -13,25 +13,19 @@
         line-height: 1.5
         color: var(--lightgray)
 
-        &_author
+        &::after
+            position: relative
+            right: -6px
+            
+            content: "/"
+            font-family: NullFont
 
-        &_category
-        
-        &_date
-
-        &_time
+        &:last-child
             margin: 0px
-
-        &_time:after
-            display: none
-
-        &_link
-            color: var(--lightgray)
-            text-decoration: none
-
-    &__tag:after
-        position: relative
-        right: -6px
         
-        content: "/"
-        font-family: NullFont
+            &::after
+                display: none
+            
+    &__link
+        color: var(--lightgray)
+        text-decoration: none

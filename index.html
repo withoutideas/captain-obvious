@@ -2,22 +2,18 @@
 <html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
-    <title>captain-obvious latest-stories</title>
+    <title>Captain obvious</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page">
     <header class="page__header header">
-        <a class="header__logo" href="index.html">Captain obvious</a>
+        <div class="header__logo">Captain obvious</div>
         
         <div class="header__menu">
             <div class="menu-button"></div>
         </div>
-        
-        <!-- <label>
-            <input type="checkbox">
-            <span class="check"></span>
-        </label> -->
 
         <nav class="header__nav nav">
             <ul class="nav__list">
@@ -28,8 +24,6 @@
                     </div>
                     
                     <ul class="nav__list">
-                        <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
                         <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
                         <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
                         <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
@@ -50,58 +44,40 @@
                 </li>
 
                 <li class="nav__item">
-                    <div class="">Language selection</div>
+                    <div class="nav__button">
+                        <div class="">Ukrainian version</div>
+                    </div>
                 </li>
 
                 <li class="nav__item">
-                    <div class="">Theme selection</div>
+                    <div class="nav__button">
+                        <div class="">Theme switch</div>
+                        <!-- <label>
+                            <input type="checkbox">
+                            <span class="check"></span>
+                        </label> -->
+                    </div>
                 </li>
             </ul>
         </nav>
     </header>
     <main class="main">
-        <div class="main__content">
-            <div class="publication-wall">
-                <h1 class="publication-wall__title">Latest stories</h1>
-                <section class="publication-preview">
-                    <h2 class="publication-preview__title">
-                        Knights, I bid you welcome to your new home
-                    </h2>
+        <div class="main__content publication-wall">
+            <h1 class="publication-wall__title">Latest stories</h1>
+            
+            <article class="publication-preview">
+                <h2 class="publication-preview__title">
+                    Knights, I bid you welcome to your new home
+                </h2>
 
-                    <div class="meta">
-                        <div class="meta__tag meta__tag_author">By <a class="meta__tag_link" href="#">Madison Barnett</a></div>
-                        <div class="meta__tag meta__tag_category">In <a class="meta__tag_link" href="#">Business</a></div>
-                        <div class="meta__tag meta__tag_time">2 Min Read</div>
-                    </div>
+                <div class="meta">
+                    <div class="meta__tag">By <a class="meta__link" href="#">Madison Barnett</a></div>
+                    <div class="meta__tag">In <a class="meta__link" href="#">Business</a></div>
+                    <div class="meta__tag">2 Min Read</div>
+                </div>
 
-                    <div class="publication-preview__content">
-                        <p>
-                            Credibly customize visionary niches before alternative services.
-                            Compellingly restore effective total linkage with sticky resources.
-                            Appropriately reconceptualize multifunctional leadership skills
-                            without turnkey outsourcing. Continually restore cross functional
-                            results through transparent models. Phosfluorescently seize 2.0
-                            for viral content. Dynamically disseminate customer directed...
-                        </p>
-                    </div>
-
-                    <div class="publication-preview__button-group">
-                        <a class="button button_read-on" href="publication.html">Read  on</a>
-                        <a class="button button_read-later" href="#">Download</a>
-                    </div>
-                </section>
-                <section class="publication-preview">
-                    <h2 class="publication-preview__title">
-                        Knights, I bid you welcome to your new home
-                    </h2>
-
-                    <div class="meta">
-                        <div class="meta__tag meta__tag_author">By <a class="meta__tag_link" href="#">Madison Barnett</a></div>
-                        <div class="meta__tag meta__tag_category">In <a class="meta__tag_link" href="#">Business</a></div>
-                        <div class="meta__tag meta__tag_time">2 Min Read</div>
-                    </div>
-
-                    <p class="publication-preview__text">
+                <div class="publication-preview__content">
+                    <p>
                         Credibly customize visionary niches before alternative services.
                         Compellingly restore effective total linkage with sticky resources.
                         Appropriately reconceptualize multifunctional leadership skills
@@ -109,19 +85,50 @@
                         results through transparent models. Phosfluorescently seize 2.0
                         for viral content. Dynamically disseminate customer directed...
                     </p>
-
-                    <div class="publication-preview__button-group">
-                        <a class="button button_read-on" href="publication.html">Read on</a>
-                        <a class="button button_read-later" href="#">Read later</a>
-                    </div>
-                </section>
-                <div class="publication-wall__button">
-                    <a class="button button_load-more" href="#">Load more</a>
                 </div>
-            </div>
+
+                <div class="publication-preview__button-group">
+                    <a class="button button_read-on" href="publication.html">Read  on</a>
+                    <a class="button button_read-later" href="#">Download</a>
+                </div>
+            </article>
+
+            <article class="publication-preview">
+                <h2 class="publication-preview__title">
+                    Knights, I bid you welcome to your new home
+                </h2>
+
+                <div class="meta">
+                    <div class="meta__tag">By <a class="meta__link" href="#">Madison Barnett</a></div>
+                    <div class="meta__tag">In <a class="meta__link" href="#">Business</a></div>
+                    <div class="meta__tag">2 Min Read</div>
+                </div>
+
+                <p class="publication-preview__text">
+                    Credibly customize visionary niches before alternative services.
+                    Compellingly restore effective total linkage with sticky resources.
+                    Appropriately reconceptualize multifunctional leadership skills
+                    without turnkey outsourcing. Continually restore cross functional
+                    results through transparent models. Phosfluorescently seize 2.0
+                    for viral content. Dynamically disseminate customer directed...
+                </p>
+
+                <div class="publication-preview__button-group">
+                    <a class="button button_read-on" href="publication.html">Read on</a>
+                    <a class="button button_read-later" href="#">Read later</a>
+                </div>
+            </article>
         </div>
     </main>
     <footer class="footer">
+        <!-- <div class="nav__item">
+            <a href="#" class="nav__link">About project</a>
+        </div>
+        <div class="nav__item">
+            <a href="#" class="nav__link">login</a>
+        </div>
+        <a href="#" class="nav__link"></a>
+        <a href="#" class="nav__link"></a> -->
     </footer>
     
     <script src="js/main.js"></script>
