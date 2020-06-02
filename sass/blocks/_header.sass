@@ -2,7 +2,7 @@
     display: flex
     width: 100%
     height: 70px
-    padding: 0px 8%
+    padding: 0px calc(8% - 10px)
 
     background-color: var(--primary)
 
@@ -12,22 +12,37 @@
     user-select: none
 
     &__logo
-        line-height: 70px
+        padding: 0px 10px
 
-        font-size: 18px
+        font-size: 19px
+        line-height: 40px
         font-weight: bold
         text-transform: uppercase
         text-decoration: none
         color: var(--white)
     
     &__menu
-        z-index: 2
-        display: flex
-        width: 20px
-        height: 18px
+        position: relative
+        //z-index: 2
+        //display: flex
+        width: 40px
+        height: 40px
         
-        align-items: center
+        //align-items: center
         cursor: pointer
+
+        &::after
+            position: absolute
+            top: 10px
+            left: 10px
+
+            width: 20px
+            height: 20px
+
+            content: var(--menu)
+
+        &_active::after
+            content: var(--x-mark)
 
     &__nav
         position: absolute

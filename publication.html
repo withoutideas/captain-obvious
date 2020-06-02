@@ -9,20 +9,29 @@
 </head>
 <body class="page">
     <header class="page__header header">
-        <a class="header__logo" href="index.html">Captain obvious</a>
+        <a href="index.html" class="header__logo">Captain obvious</a>
         
         <div class="header__menu">
-            <div class="menu-button"></div>
+            <!-- <img src="../img/icon/iconmonstr-menu-1.svg" alt=""> -->
         </div>
 
         <nav class="header__nav nav">
             <ul class="nav__list">
-                <li class="nav__item" id="item_categories">
-                    <div class="nav__button" id="nav__button_categories">
-                        <div class="">Categories</div>
-                        <div class="nav-button" id="button_categories"></div>
+                <li class="nav__item nav__item_list">
+                    <div class="nav__button nav__button_list">
+                        <div class="nav__link">Authors</div>
                     </div>
-                    
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#">Alexandra Izotova</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Alex Zinchenko</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav__item nav__item_list">
+                    <div class="nav__button nav__button_list">
+                        <div class="nav__link">Categories</div>
+                    </div>
+
                     <ul class="nav__list">
                         <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
                         <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
@@ -30,32 +39,15 @@
                     </ul>
                 </li>
 
-                <li class="nav__item" id="item_authors">
-                    <div class="nav__button" id="nav__button_authors">
-                        <div class="">Authors</div>
-                        <div class="nav-button" id="button_authors"></div>
-                    </div>
-                    
-                    <ul class="nav__list">
-                        <li class="nav__item"><a class="nav__link" href="#">Author</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Author</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Author</a></li>
-                    </ul>
-                </li>
-
                 <li class="nav__item">
-                    <div class="nav__button">
-                        <div class="">Ukrainian version</div>
+                    <div class="nav__button nav__button_theme">
+                        <div class="nav__link">Theme</div>
                     </div>
                 </li>
 
                 <li class="nav__item">
-                    <div class="nav__button">
-                        <div class="">Theme switch</div>
-                        <!-- <label>
-                            <input type="checkbox">
-                            <span class="check"></span>
-                        </label> -->
+                    <div class="nav__button nav__button_share">
+                        <a class="nav__link">Ukrainian</a>
                     </div>
                 </li>
             </ul>
@@ -96,9 +88,7 @@
                 <h2>
                     Assertively revolutionize covalent leadership
                 </h2>
-                <!-- 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/C8pO3Rbepgs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                 -->
+                
                 <p>
                     Completely streamline unique resources after user friendly schemas.
                     Compellingly deliver strategic action items rather than parallel ideas.

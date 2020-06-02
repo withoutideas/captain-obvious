@@ -9,20 +9,29 @@
 </head>
 <body class="page">
     <header class="page__header header">
-        <div class="header__logo">Captain obvious</div>
+        <a href="#" class="header__logo">Captain obvious</a>
         
         <div class="header__menu">
-            <div class="menu-button"></div>
+            <!-- <img src="../img/icon/iconmonstr-menu-1.svg" alt=""> -->
         </div>
 
         <nav class="header__nav nav">
             <ul class="nav__list">
-                <li class="nav__item" id="item_categories">
-                    <div class="nav__button" id="nav__button_categories">
-                        <div class="">Categories</div>
-                        <div class="nav-button" id="button_categories"></div>
+                <li class="nav__item nav__item_list">
+                    <div class="nav__button nav__button_list">
+                        <div class="nav__link">Authors</div>
                     </div>
-                    
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#">Alexandra Izotova</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Alex Zinchenko</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav__item nav__item_list">
+                    <div class="nav__button nav__button_list">
+                        <div class="nav__link">Categories</div>
+                    </div>
+
                     <ul class="nav__list">
                         <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
                         <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
@@ -30,32 +39,15 @@
                     </ul>
                 </li>
 
-                <li class="nav__item" id="item_authors">
-                    <div class="nav__button" id="nav__button_authors">
-                        <div class="">Authors</div>
-                        <div class="nav-button" id="button_authors"></div>
-                    </div>
-                    
-                    <ul class="nav__list">
-                        <li class="nav__item"><a class="nav__link" href="#">Author</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Author</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Author</a></li>
-                    </ul>
-                </li>
-
                 <li class="nav__item">
-                    <div class="nav__button">
-                        <div class="">Ukrainian version</div>
+                    <div class="nav__button nav__button_theme">
+                        <div class="nav__link">Theme</div>
                     </div>
                 </li>
 
                 <li class="nav__item">
-                    <div class="nav__button">
-                        <div class="">Theme switch</div>
-                        <!-- <label>
-                            <input type="checkbox">
-                            <span class="check"></span>
-                        </label> -->
+                    <div class="nav__button nav__button_share">
+                        <a class="nav__link">Ukrainian</a>
                     </div>
                 </li>
             </ul>
@@ -88,8 +80,8 @@
                 </div>
 
                 <div class="publication-preview__button-group">
-                    <a class="button button_read-on" href="publication.html">Read  on</a>
-                    <a class="button button_read-later" href="#">Download</a>
+                    <a class="button button_read-on" href="publication.html">Read on</a>
+                    <!-- <a class="button button_read-later" href="#">Put off</a> -->
                 </div>
             </article>
 
@@ -115,7 +107,7 @@
 
                 <div class="publication-preview__button-group">
                     <a class="button button_read-on" href="publication.html">Read on</a>
-                    <a class="button button_read-later" href="#">Read later</a>
+                    <a class="button button_read-later" href="#">Put off</a>
                 </div>
             </article>
         </div>

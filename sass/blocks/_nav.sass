@@ -1,9 +1,11 @@
 .nav
     display: none
     width: 100%
-    padding: 0px 8% 15px
+    padding: 0px calc(8% - 10px)
 
     font-size: 17px
+    //font-weight: bold
+    text-transform: uppercase
     color: var(--white)
 
     background-color: var(--primary)
@@ -12,41 +14,69 @@
         display: block
 
     &__list
-        display: flex
-        width: 100%
+        //width: 100%
         margin: 0px
-        padding: 0px
-
-        flex-direction: column
+        padding: 0px 0px 15px
 
         list-style-type: none
 
+    &__item .nav__list
+        padding: 0px 0px 0px 35px
+        //border-bottom: 1px dot var(--white)
+        //list-style-type: disc
+        
+        text-transform: none
+
     &__item
-        display: flex
-        width: 100%
+        //width: 100%
         height: 40px
         
-        overflow: hidden
+        //overflow: hidden
 
-        flex-wrap: wrap
-        align-items: center
+        &_list
+            overflow: hidden
 
-        &_active
-            height: auto
+            &_active
+                height: auto
 
     &__button
+        position: relative
         display: flex
         width: 100%
         height: 40px
 
+        flex-wrap: wrap
         justify-content: space-between
         align-items: center
         
         cursor: pointer
 
+        &::after
+            position: absolute
+            top: 10px
+            right: 10px
+            
+            width: 20px
+            height: 20px
+        
+        &_list::after
+            content: var(--arrow)
+
+        &_theme::after
+            content: var(--brightness)
+            
+        &_share::after
+            content: var(--share)
+
+        &_active::after
+            transform: rotate(180deg)
+        
     &__link
+        position: relative
+        display: block
         width: 100%
-        padding: 0px 0px 0px 25px
+        //margin: 0px 0px 0px 30px
+        padding: 0px 0px 0px 10px
 
         line-height: 40px
         text-decoration: none

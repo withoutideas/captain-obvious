@@ -1,9 +1,10 @@
 .button
+    position: relative
     width: 145px
     height: 40px
         
-    font-size: 11px
-    font-weight: bold
+    font-size: 17px
+    //font-weight: 500
     line-height: 40px
     text-decoration: none
     text-transform: uppercase
@@ -18,11 +19,31 @@
 
         background-color: var(--primary)
     
+        &::after
+            position: absolute
+            top: 5px
+            left: 85px
+            
+            width: 20px
+            height: 20px
+
+            content: url(../img/icon/iconmonstr-book-15.svg)
+
     &_read-later
         color: var(--primary)
         
-        border: 1px solid var(--primary)
-    
+        border: 2px solid var(--primary)
+
+        &::after
+            position: absolute
+            top: 5px
+            left: 85px
+            
+            width: 20px
+            height: 20px
+
+            content: url(../img/icon/iconmonstr-book-4.svg)
+
 @media (max-width: 480px)
     .button
         width: auto

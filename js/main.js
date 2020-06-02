@@ -1,23 +1,36 @@
-//const menu_toggle = document.querySelector(".header__menu");
-//const nav_position = document.querySelector(".nav");
+const menuToggle = document.querySelector(".header__menu");
+const nav = document.querySelector(".nav");
+const menuButton = document.querySelector(".menu-button");
 
-document.querySelector(".header__menu").onclick = function() {
-    document.querySelector(".menu-button").classList.toggle("menu-button_active");
-    document.querySelector(".nav").classList.toggle("nav_active");
-    
-    document.getElementById("button_categories").classList.remove("nav-button_active");
-    document.getElementById("item_categories").classList.remove("nav__item_active");
+menuToggle.addEventListener("click", function() {
 
-    document.getElementById("button_authors").classList.remove("nav-button_active");
-    document.getElementById("item_authors").classList.remove("nav__item_active");
-}
+    nav.classList.toggle("nav_active");
+    menuToggle.classList.toggle("header__menu_active");
 
-document.getElementById("nav__button_categories").onclick = function() {
-    document.getElementById("button_categories").classList.toggle("nav-button_active");
-    document.getElementById("item_categories").classList.toggle("nav__item_active");
-}
+});
 
-document.getElementById("nav__button_authors").onclick = function() {
-    document.getElementById("button_authors").classList.toggle("nav-button_active");
-    document.getElementById("item_authors").classList.toggle("nav__item_active");
-}
+document.querySelector(".main").addEventListener("click", function() {
+
+    nav.classList.remove("nav_active");
+    menuToggle.classList.remove("header__menu_active");
+
+});
+
+nav.addEventListener("click", function(event) {
+
+    const navItem = event.target.closest(".nav__item_list");
+    const navButton = event.target.closest(".nav__button");
+
+    if (navButton && navItem) {
+        navItem.classList.toggle("nav__item_list_active");
+        navButton.classList.toggle("nav__button_active");
+
+    }
+});
+
+const navButton = nav.querySelector(".nav__button_theme");
+
+navButton.addEventListener("click", function(event) {
+
+        navButton.classList.toggle("nav__button_active");
+});
