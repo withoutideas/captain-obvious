@@ -5,14 +5,13 @@ html {
   --gray: #444444;
   --lightgray: #888888;
   --darkgray: #333333;
-  --facebook: #485d9c;
-  --instagram: #745d9c;
-  --telegram: #4482a1;
   --menu: url(../img/icon/iconmonstr-menu-1.svg);
   --x-mark: url(../img/icon/iconmonstr-x-mark-2.svg);
   --arrow: url(../img/icon/iconmonstr-arrow-65.svg);
   --brightness: url(../img/icon/iconmonstr-brightness-10.svg);
   --share: url(../img/icon/iconmonstr-share-11.svg);
+  --instagram: url(../img/icon/iconmonstr-instagram-11.svg);
+  --facebook: url(../img/icon/iconmonstr-facebook-1.svg);
 }
 
 html[data-theme="dark"] {
@@ -22,11 +21,13 @@ html[data-theme="dark"] {
   --gray: #444444;
   --lightgray: #888888;
   --darkgray: #333333;
-  --facebook: #485d9c;
-  --instagram: #745d9c;
-  --telegram: #4482a1;
 }
 
+/*
+    --facebook: #485d9c
+    --instagram: #745d9c
+    --telegram: #4482a1
+ */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -85,17 +86,35 @@ html[data-theme="dark"] {
   cursor: pointer;
 }
 
-.header__menu::after {
+.header__menu::before {
   position: absolute;
   top: 10px;
   left: 10px;
   width: 20px;
   height: 20px;
-  content: var(--menu);
+  content: "";
+  background-image: var(--menu);
+  background-repeat: no-repeat;
+}
+
+.header__menu::after {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  visibility: hidden;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background-image: var(--x-mark);
+  background-repeat: no-repeat;
+}
+
+.header__menu_active::before {
+  visibility: hidden;
 }
 
 .header__menu_active::after {
-  content: var(--x-mark);
+  visibility: visible;
 }
 
 .header__nav {
@@ -171,6 +190,13 @@ html[data-theme="dark"] {
           user-select: none;
 }
 
+.publication__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0px 0px;
+}
+
 @media (max-width: 480px) {
   .publication__title {
     font-size: 27px;
@@ -180,6 +206,12 @@ html[data-theme="dark"] {
   }
   .publication__content h3 {
     font-size: 20px;
+  }
+  .publication__button {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -320,6 +352,21 @@ html[data-theme="dark"] {
   content: url(../img/icon/iconmonstr-book-15.svg);
 }
 
+.button_share {
+  margin: 0px 15px 0px 0px;
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+.button_share::after {
+  position: absolute;
+  top: 5px;
+  left: 85px;
+  width: 20px;
+  height: 20px;
+  content: url(../img/icon/iconmonstr-share-1.svg);
+}
+
 .button_read-later {
   color: var(--primary);
   border: 2px solid var(--primary);
@@ -339,6 +386,9 @@ html[data-theme="dark"] {
     width: auto;
   }
   .button_read-on {
+    margin: 0px 0px 15px;
+  }
+  .button_share {
     margin: 0px 0px 15px;
   }
 }
@@ -404,18 +454,22 @@ html[data-theme="dark"] {
   right: 10px;
   width: 20px;
   height: 20px;
+  background-repeat: no-repeat;
 }
 
 .nav__button_list::after {
-  content: var(--arrow);
+  content: "";
+  background-image: var(--arrow);
 }
 
 .nav__button_theme::after {
-  content: var(--brightness);
+  content: "";
+  background-image: var(--brightness);
 }
 
 .nav__button_share::after {
-  content: var(--share);
+  content: "";
+  background-image: var(--share);
 }
 
 .nav__button_active::after {
@@ -441,11 +495,43 @@ html[data-theme="dark"] {
 }
 
 .footer {
-  height: 120px;
-  padding: 0px 8%;
-  background-color: var(--white);
+  padding: 15px calc(8% - 10px);
+  background-color: var(--primary);
 }
 
+.footer__link {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0px 0px 0px 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.footer__link::after {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.footer__link_instagram::after {
+  content: "";
+  background-image: var(--instagram);
+}
+
+.footer__link_facebook::after {
+  content: "";
+  background-image: var(--facebook);
+}
+
+/*
+        &_active::after
+            transform: rotate(180deg)
+
+ */
 .menu-button {
   position: relative;
   width: 20px;

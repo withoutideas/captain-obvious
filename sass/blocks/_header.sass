@@ -23,15 +23,12 @@
     
     &__menu
         position: relative
-        //z-index: 2
-        //display: flex
         width: 40px
         height: 40px
         
-        //align-items: center
         cursor: pointer
 
-        &::after
+        &::before
             position: absolute
             top: 10px
             left: 10px
@@ -39,10 +36,28 @@
             width: 20px
             height: 20px
 
-            content: var(--menu)
+            content: ""
+            background-image: var(--menu)
+            background-repeat: no-repeat
 
+        &::after
+            position: absolute
+            top: 10px
+            left: 10px
+
+            visibility: hidden
+            width: 20px
+            height: 20px
+
+            content: ""
+            background-image: var(--x-mark)
+            background-repeat: no-repeat
+
+        &_active::before
+            visibility: hidden
+            
         &_active::after
-            content: var(--x-mark)
+            visibility: visible
 
     &__nav
         position: absolute

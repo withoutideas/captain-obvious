@@ -58,15 +58,20 @@
             
             width: 20px
             height: 20px
+
+            background-repeat: no-repeat
         
         &_list::after
-            content: var(--arrow)
+            content: ""
+            background-image: var(--arrow)
 
         &_theme::after
-            content: var(--brightness)
+            content: ""
+            background-image: var(--brightness)
             
         &_share::after
-            content: var(--share)
+            content: ""
+            background-image: var(--share)
 
         &_active::after
             transform: rotate(180deg)
