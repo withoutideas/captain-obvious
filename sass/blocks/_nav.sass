@@ -1,7 +1,7 @@
 .nav
     display: none
     width: 100%
-    padding: 0px calc(8% - 10px)
+    padding: 0px 8%
 
     font-size: 17px
     //font-weight: bold
@@ -16,20 +16,17 @@
     &__list
         //width: 100%
         margin: 0px
-        padding: 0px 0px 15px
+        padding: 0px 0px 20px
 
         list-style-type: none
 
-    &__item .nav__list
-        padding: 0px 0px 0px 35px
-        //border-bottom: 1px dot var(--white)
-        //list-style-type: disc
-        
-        text-transform: none
+    &__list .nav__list
+        padding: 0px
 
     &__item
         //width: 100%
         height: 40px
+        //margin: 0px 0px 5px
         
         //overflow: hidden
 
@@ -44,17 +41,18 @@
         display: flex
         width: 100%
         height: 40px
+        //padding: 0px 0px 0px 10px
 
         flex-wrap: wrap
         justify-content: space-between
         align-items: center
         
-        cursor: pointer
+        //cursor: pointer
 
         &::after
             position: absolute
             top: 10px
-            right: 10px
+            right: 0px
             
             width: 20px
             height: 20px
@@ -63,28 +61,30 @@
         
         &_list::after
             content: ""
-            background-image: var(--arrow)
+            background-image: url(../img/icon/iconmonstr-arrow-65.svg)
 
         &_theme::after
             content: ""
-            background-image: var(--brightness)
+            background-image: url(../img/icon/iconmonstr-brightness-10.svg)
             
         &_share::after
             content: ""
-            background-image: var(--share)
+            background-image: url(../img/icon/iconmonstr-share-11.svg)
 
         &_active::after
             transform: rotate(180deg)
         
     &__link
         position: relative
-        display: block
-        width: 100%
-        //margin: 0px 0px 0px 30px
-        padding: 0px 0px 0px 10px
+        display: inline-block
+        //width: 100%
+        margin: 0px 0px 0px 30px
+        //padding: 0px 10px
 
+        //font-size: 16px
         line-height: 40px
-        text-decoration: none
+        //text-decoration: none
+        text-transform: none
         color: var(--white)
 
 @media (min-width: 480px)

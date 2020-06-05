@@ -9,16 +9,17 @@
 </head>
 <body class="page">
     <header class="page__header header">
-        <a href="#" class="header__logo">Captain obvious</a>
+        <a class="header__logo">Captain obvious</a>
         
-        <div class="header__menu">
+        <div class="header__menu" type="button" aria-expanded="false" aria-controls="nav">
         </div>
 
-        <nav class="header__nav nav">
+        <nav class="header__nav nav" id="nav">
+
             <ul class="nav__list">
                 <li class="nav__item nav__item_list">
                     <div class="nav__button nav__button_list">
-                        <div class="nav__link">Authors</div>
+                        <div class="">Authors</div>
                     </div>
                     <ul class="nav__list">
                         <li class="nav__item"><a class="nav__link" href="#">Alexandra Izotova</a></li>
@@ -28,7 +29,7 @@
 
                 <li class="nav__item nav__item_list">
                     <div class="nav__button nav__button_list">
-                        <div class="nav__link">Categories</div>
+                        <div class="">Categories</div>
                     </div>
 
                     <ul class="nav__list">
@@ -40,13 +41,13 @@
 
                 <li class="nav__item">
                     <div class="nav__button nav__button_theme">
-                        <div class="nav__link">Theme</div>
+                        <div class="">Theme</div>
                     </div>
                 </li>
 
                 <li class="nav__item">
                     <div class="nav__button nav__button_share">
-                        <a class="nav__link">Ukrainian</a>
+                        <a class="">Ukrainian</a>
                     </div>
                 </li>
             </ul>
@@ -106,7 +107,7 @@
 
                 <div class="publication-preview__button-group">
                     <a class="button button_read-on" href="publication.html">Read on</a>
-                    <a class="button button_read-later" href="#">Put off</a>
+                    <!-- <a class="button button_read-later" href="#">Put off</a> -->
                 </div>
             </article>
         </div>
