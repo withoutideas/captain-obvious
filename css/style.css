@@ -51,10 +51,6 @@ html[data-theme="dark"] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 .header__logo {
@@ -67,15 +63,23 @@ html[data-theme="dark"] {
 }
 
 .header__menu {
-  position: relative;
+  position: absolute;
+  top: -55px;
+  right: calc(8% - 10px);
+  display: block;
   width: 40px;
   height: 40px;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  visibility: visible;
 }
 
-.header__menu::after {
+.header__menu::before {
   position: absolute;
   top: 10px;
-  right: 0px;
+  right: 10px;
   width: 20px;
   height: 20px;
   content: "";
@@ -83,8 +87,24 @@ html[data-theme="dark"] {
   background-repeat: no-repeat;
 }
 
-.header__menu_active::after {
+.header__menu::after {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  content: "";
+  width: 20px;
+  height: 20px;
   background-image: url(../img/icon/iconmonstr-x-mark-2.svg);
+  background-repeat: no-repeat;
+  visibility: hidden;
+}
+
+.header__menu_active::before {
+  visibility: hidden;
+}
+
+.header__menu_active::after {
+  visibility: visible;
 }
 
 .header__nav {
@@ -337,17 +357,18 @@ html[data-theme="dark"] {
 }
 
 .nav {
-  display: none;
   width: 100%;
   padding: 0px 8%;
   font-size: 17px;
+  line-height: 40px;
   text-transform: uppercase;
   color: var(--white);
   background-color: var(--primary);
+  visibility: hidden;
 }
 
 .nav_active {
-  display: block;
+  visibility: visible;
 }
 
 .nav__list {
@@ -374,19 +395,17 @@ html[data-theme="dark"] {
 
 .nav__button {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   width: 100%;
   height: 40px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  text-align: left;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: transparent;
 }
 
 .nav__button::after {
@@ -408,7 +427,11 @@ html[data-theme="dark"] {
   background-image: url(../img/icon/iconmonstr-brightness-10.svg);
 }
 
-.nav__button_share::after {
+.nav__button_link {
+  text-decoration: none;
+}
+
+.nav__button_link::after {
   content: "";
   background-image: url(../img/icon/iconmonstr-share-11.svg);
 }
@@ -463,93 +486,5 @@ html[data-theme="dark"] {
 .footer__link_facebook::after {
   content: "";
   background-image: url(../img/icon/iconmonstr-facebook-1.svg);
-}
-
-/*
-        &_active::after
-            transform: rotate(180deg)
-
- */
-.menu-button {
-  position: relative;
-  width: 20px;
-  height: 2px;
-  background-color: var(--white);
-}
-
-.menu-button::before {
-  position: absolute;
-  top: -8px;
-  left: 0px;
-  display: block;
-  content: "";
-  width: 20px;
-  height: 2px;
-  background-color: var(--white);
-}
-
-.menu-button::after {
-  position: absolute;
-  top: 8px;
-  left: 0px;
-  display: block;
-  content: "";
-  width: 20px;
-  height: 2px;
-  background-color: var(--white);
-}
-
-.menu-button.menu-button_active {
-  background-color: transparent;
-}
-
-.menu-button.menu-button_active::before {
-  top: 0px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.menu-button.menu-button_active::after {
-  top: 0px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.nav-button {
-  position: relative;
-  z-index: 2;
-  width: 20px;
-  height: 18px;
-}
-
-.nav-button::before {
-  position: absolute;
-  top: 9px;
-  left: 1px;
-  display: block;
-  content: "";
-  width: 11px;
-  height: 2px;
-  background-color: var(--white);
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.nav-button::after {
-  position: absolute;
-  top: 9px;
-  left: 8px;
-  display: block;
-  content: "";
-  width: 11px;
-  height: 2px;
-  background-color: var(--white);
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.nav-button_active {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 /*# sourceMappingURL=style.css.map */

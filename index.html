@@ -10,17 +10,15 @@
 <body class="page">
     <header class="page__header header">
         <a class="header__logo">Captain obvious</a>
-        
-        <div class="header__menu" type="button" aria-expanded="false" aria-controls="nav">
-        </div>
 
         <nav class="header__nav nav" id="nav">
+            <button class="header__menu" type="button" aria-expanded="false" aria-controls="nav">
+            </button>
 
             <ul class="nav__list">
                 <li class="nav__item nav__item_list">
-                    <div class="nav__button nav__button_list">
-                        <div class="">Authors</div>
-                    </div>
+                    <button class="nav__button nav__button_list" type="button">Authors</button>
+
                     <ul class="nav__list">
                         <li class="nav__item"><a class="nav__link" href="#">Alexandra Izotova</a></li>
                         <li class="nav__item"><a class="nav__link" href="#">Alex Zinchenko</a></li>
@@ -28,9 +26,7 @@
                 </li>
 
                 <li class="nav__item nav__item_list">
-                    <div class="nav__button nav__button_list">
-                        <div class="">Categories</div>
-                    </div>
+                    <button class="nav__button nav__button_list" type="button">Categories</button>
 
                     <ul class="nav__list">
                         <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
@@ -40,15 +36,11 @@
                 </li>
 
                 <li class="nav__item">
-                    <div class="nav__button nav__button_theme">
-                        <div class="">Theme</div>
-                    </div>
+                    <button class="nav__button nav__button_theme" type="button">Theme</button>
                 </li>
 
                 <li class="nav__item">
-                    <div class="nav__button nav__button_share">
-                        <a class="">Ukrainian</a>
-                    </div>
+                    <a href="#" class="nav__button nav__button_link">Ukrainian</a>
                 </li>
             </ul>
         </nav>

@@ -1,17 +1,17 @@
 .nav
-    display: none
     width: 100%
     padding: 0px 8%
 
     font-size: 17px
-    //font-weight: bold
+    line-height: 40px
     text-transform: uppercase
     color: var(--white)
 
     background-color: var(--primary)
+    visibility: hidden
     
     &_active
-        display: block
+        visibility: visible
 
     &__list
         //width: 100%
@@ -38,16 +38,21 @@
 
     &__button
         position: relative
-        display: flex
+
+        display: block
         width: 100%
         height: 40px
-        //padding: 0px 0px 0px 10px
-
-        flex-wrap: wrap
-        justify-content: space-between
-        align-items: center
+        margin: 0px
+        padding: 0px
+        border: none
         
-        //cursor: pointer
+        text-align: left
+        font-size: 17px
+        text-transform: uppercase
+        color: var(--white)
+
+        
+        background-color: transparent
 
         &::after
             position: absolute
@@ -56,7 +61,7 @@
             
             width: 20px
             height: 20px
-
+            //background-position: center
             background-repeat: no-repeat
         
         &_list::after
@@ -67,9 +72,12 @@
             content: ""
             background-image: url(../img/icon/iconmonstr-brightness-10.svg)
             
-        &_share::after
-            content: ""
-            background-image: url(../img/icon/iconmonstr-share-11.svg)
+        &_link
+            text-decoration: none
+
+            &::after
+                content: ""
+                background-image: url(../img/icon/iconmonstr-share-11.svg)
 
         &_active::after
             transform: rotate(180deg)
