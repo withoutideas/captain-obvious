@@ -17,52 +17,6 @@
         text-decoration: none
         color: var(--white)
     
-    &__menu
-        position: absolute
-        top: -55px
-        right: calc(8% - 10px)
-
-        display: block
-        width: 40px
-        height: 40px
-        margin: 0px
-        padding: 0px
-        border: none
-        
-        background-color: transparent
-        visibility: visible
-
-        &::before
-            position: absolute
-            top: 10px
-            right: 10px
-
-            width: 20px
-            height: 20px
-
-            content: ""
-            background-image: url(../img/icon/iconmonstr-menu-1.svg)
-            background-repeat: no-repeat
-
-        &::after
-            position: absolute
-            top: 10px
-            right: 10px
-
-            content: ""
-            width: 20px
-            height: 20px
-
-            background-image: url(../img/icon/iconmonstr-x-mark-2.svg)
-            background-repeat: no-repeat
-            visibility: hidden
-
-        &_active::before
-            visibility: hidden
-            
-        &_active::after
-            visibility: visible
-
     &__nav
         position: absolute
         top: 70px

@@ -8,10 +8,6 @@
     color: var(--white)
 
     background-color: var(--primary)
-    visibility: hidden
-    
-    &_active
-        visibility: visible
 
     &__list
         //width: 100%
@@ -19,81 +15,72 @@
         padding: 0px 0px 20px
 
         list-style-type: none
+        display: none
+
+        &_active
+            display: block
 
     &__list .nav__list
         padding: 0px
 
     &__item
-        //width: 100%
-        height: 40px
-        //margin: 0px 0px 5px
+        position: relative
+        //height: 40px
         
-        //overflow: hidden
+    &__link
+        position: relative
+        display: inline-block
+        margin: 0px 0px 0px 30px
 
-        &_list
-            overflow: hidden
-
-            &_active
-                height: auto
+        line-height: 40px
+        text-transform: none
+        color: var(--white)
 
     &__button
-        position: relative
+        position: absolute
+        top: 0px
+        right: -10px
 
         display: block
-        width: 100%
+        width: 40px
         height: 40px
         margin: 0px
         padding: 0px
         border: none
-        
-        text-align: left
-        font-size: 17px
-        text-transform: uppercase
-        color: var(--white)
-
         
         background-color: transparent
 
         &::after
             position: absolute
             top: 10px
-            right: 0px
+            left: 10px
             
+            content: ""
             width: 20px
             height: 20px
-            //background-position: center
             background-repeat: no-repeat
-        
+
+        &_menu
+            top: -55px
+            right: calc(8% - 10px)
+
+            &::after
+                background-image: url(../img/icon/iconmonstr-menu-1.svg)
+
+            &_active::after
+                background-image: url(../img/icon/iconmonstr-x-mark-2.svg)
+
         &_list::after
-            content: ""
             background-image: url(../img/icon/iconmonstr-arrow-65.svg)
 
         &_theme::after
-            content: ""
             background-image: url(../img/icon/iconmonstr-brightness-10.svg)
             
-        &_link
-            text-decoration: none
-
-            &::after
-                content: ""
-                background-image: url(../img/icon/iconmonstr-share-11.svg)
+        &_link::after
+            background-image: url(../img/icon/iconmonstr-share-11.svg)
 
         &_active::after
             transform: rotate(180deg)
-        
-    &__link
-        position: relative
-        display: inline-block
-        //width: 100%
-        margin: 0px 0px 0px 30px
-        //padding: 0px 10px
-
-        //font-size: 16px
-        line-height: 40px
-        //text-decoration: none
-        text-transform: none
-        color: var(--white)
 
 @media (min-width: 480px)
     .nav
