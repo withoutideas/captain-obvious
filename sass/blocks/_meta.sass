@@ -1,10 +1,8 @@
 .meta
     display: flex
-    margin: 8px 0px 20px
+    margin: 5px 0px 15px
 
     flex-wrap: wrap
-    
-    //user-select: none
 
     &__tag
         margin: 0px 10px 0px 0px
@@ -15,10 +13,14 @@
 
         &::after
             position: relative
-            right: -6px
+            right: -5px
             
             content: "/"
-            font-family: NullFont
+
+            display: inline-block
+            height: 14px
+
+            overflow: hidden
 
         &:last-child
             margin: 0px
@@ -28,4 +30,4 @@
             
     //&__link
         color: var(--lightgray)
-        text-decoration: none
+        //text-decoration: none
