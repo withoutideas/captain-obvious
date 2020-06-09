@@ -3,29 +3,35 @@ const menuList = document.getElementById('menu-list');
 
 const authorsButton = document.getElementById('authors-button');
 const authorsList = document.getElementById('authors-list');
+const authorsIcon = document.getElementById('authors-icon');
 
 const categoriesButton = document.getElementById('categories-button');
 const categoriesList = document.getElementById('categories-list');
+const categoriesIcon = document.getElementById('categories-icon');
 
 const themeButton = document.getElementById('theme-button');
+const themeIcon = document.getElementById('theme-icon');
 
 menuButton.addEventListener('click', () => {
-    menuButton.classList.toggle('nav__button_menu_active');
+    menuButton.classList.toggle('nav__button_active');
     menuList.classList.toggle('nav__list_active');
 });
 
 authorsButton.addEventListener('click', () => {
     authorsButton.classList.toggle('nav__button_active');
     authorsList.classList.toggle('nav__list_active');
+    authorsIcon.classList.toggle('nav__icon_list_active');
 });
 
 categoriesButton.addEventListener('click', () => {
     categoriesButton.classList.toggle('nav__button_active');
     categoriesList.classList.toggle('nav__list_active');
+    categoriesIcon.classList.toggle('nav__icon_list_active');
 });
 
 themeButton.addEventListener('click', () => {
     themeButton.classList.toggle('nav__button_active');
+    themeIcon.classList.toggle('nav__icon_theme_active');
 });
 
 

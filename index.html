@@ -12,20 +12,36 @@
         <a class="header__logo" href="#">Captain obvious</a>
 
         <nav class="header__nav nav">
-            <button class="nav__button nav__button_menu" type="button" id="menu-button"></button>
+            <button class="nav__button nav__button_menu" type="button" id="menu-button">
+                <svg class="nav__icon" width="20px" height="20px">
+                    <use class="nav__icon_menu" href="../img/icon/icon-nav-sprite.svg#menu"></use>
+                    <use class="nav__icon_x-mark" href="../img/icon/icon-nav-sprite.svg#x-mark"></use>
+                </svg>
+            </button>
 
             <ul class="nav__list" id="menu-list">
-                <li class="nav__item">Authors
-                    <button class="nav__button nav__button_list" type="button" id="authors-button"></button>
+                <li class="nav__item">
+                    <span>Authors</span>
+
+                    <button class="nav__button nav__button_list" type="button" id="authors-button">
+                        <svg class="nav__icon" width="20px" height="20px" id="authors-icon">
+                            <use class="" href="../img/icon/icon-nav-sprite.svg#arrow"></use>
+                        </svg>
+                    </button>
 
                     <ul class="nav__list" id="authors-list">
                         <li class="nav__item"><a class="nav__link" href="#">Alexandra Izotova</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Alex Zinchenko</a></li>
                     </ul>
                 </li>
 
-                <li class="nav__item">Categories
-                    <button class="nav__button nav__button_list" type="button" id="categories-button"></button>
+                <li class="nav__item">
+                    <span>Categories</span>
+
+                    <button class="nav__button nav__button_list" type="button" id="categories-button">
+                        <svg class="nav__icon" width="20px" height="20px" id="categories-icon">
+                            <use class="" href="../img/icon/icon-nav-sprite.svg#arrow"></use>
+                        </svg>
+                    </button>
 
                     <ul class="nav__list" id="categories-list">
                         <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
@@ -34,12 +50,24 @@
                     </ul>
                 </li>
 
-                <li class="nav__item">Theme
-                    <button class="nav__button nav__button_theme" type="button" id="theme-button"></button>
+                <li class="nav__item">
+                    <span>Theme</span>
+
+                    <button class="nav__button nav__button_theme" type="button" id="theme-button">
+                        <svg class="nav__icon" width="20px" height="20px" id="theme-icon">
+                            <use class="" href="../img/icon/icon-nav-sprite.svg#theme"></use>
+                        </svg>
+                    </button>
                 </li>
 
-                <li class="nav__item">Ukrainian
-                    <a class="nav__button nav__button_link" href="#"></a>
+                <li class="nav__item">
+                    <span>Ukrainian</span>
+
+                    <a class="nav__button nav__button_link" href="#">
+                        <svg class="nav__icon" width="20px" height="20px">
+                            <use class="" href="../img/icon/icon-nav-sprite.svg#share"></use>
+                        </svg>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -70,11 +98,11 @@
                     </p>
                 </div>
 
-                <div class="publication-preview__button-group">
+                <div class="publication-preview__button">
                     <a class="button button_read-on" href="publication.html">Read</a>
                     <!-- <a class="button button_read-later" href="#">Put off</a> -->
                 </div>
-            </article>
+            </section>
 
             <section class="publication-preview">
                 <h2 class="publication-preview__title">
@@ -82,8 +110,8 @@
                 </h2>
 
                 <div class="meta">
-                    <div class="meta__tag">By <a class="meta__link" href="#">Alex Zinchenko</a></div>
-                    <div class="meta__tag">In <a class="meta__link" href="#">Business</a></div>
+                    <div class="meta__tag">By Alexandra Izotova</div>
+                    <div class="meta__tag">In Business</div>
                     <div class="meta__tag">2 Min Read</div>
                 </div>
 
@@ -96,7 +124,7 @@
                     for viral content. Dynamically disseminate customer directed...
                 </p>
 
-                <div class="publication-preview__button-group">
+                <div class="publication-preview__button">
                     <a class="button button_read-on" href="publication.html">Read</a>
                     <!-- <a class="button button_read-later" href="#">Put off</a> -->
                 </div>

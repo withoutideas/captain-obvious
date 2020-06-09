@@ -10,7 +10,6 @@
     background-color: var(--primary)
 
     &__list
-        //width: 100%
         margin: 0px
         padding: 0px 0px 20px
 
@@ -20,15 +19,13 @@
         &_active
             display: block
 
-    &__list .nav__list
-        padding: 0px
+        & .nav__list
+            padding: 0px
 
     &__item
         position: relative
-        //height: 40px
         
     &__link
-        position: relative
         display: inline-block
         margin: 0px 0px 0px 30px
 
@@ -50,39 +47,29 @@
         
         background-color: transparent
 
-        &::after
-            position: absolute
-            top: 10px
-            left: 10px
-            
-            content: ""
-            width: 20px
-            height: 20px
-            background-repeat: no-repeat
-
         &_menu
             top: -55px
             right: calc(8% - 10px)
 
-            &::after
-                background-image: url(../img/icon/iconmonstr-menu-1.svg)
+    &__icon
+        position: absolute
+        top: 10px
+        left: 10px
 
-            &_active::after
-                background-image: url(../img/icon/iconmonstr-x-mark-2.svg)
+        fill: var(--white)
 
-        &_list::after
-            background-image: url(../img/icon/iconmonstr-arrow-65.svg)
-
-        &_theme::after
-            background-image: url(../img/icon/iconmonstr-brightness-10.svg)
-            
-        &_link::after
-            background-image: url(../img/icon/iconmonstr-share-11.svg)
-
-        &_active::after
+        &_list_active
             transform: rotate(180deg)
+        
+        &_theme_active
+            fill: var(--black)
+
+.nav__icon_menu, .nav__button_active .nav__icon_x-mark
+    display: block
+
+.nav__icon_x-mark, .nav__button_active .nav__icon_menu
+    display: none
 
 @media (min-width: 480px)
     .nav
         width: 360px
-        height: 100vh

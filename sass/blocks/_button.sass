@@ -4,7 +4,6 @@
     height: 40px
         
     font-size: 17px
-    //font-weight: 500
     line-height: 40px
     text-decoration: none
     text-transform: uppercase
@@ -13,7 +12,7 @@
     user-select: none
         
     &_read-on
-        margin: 0px 15px 0px 0px
+        //margin: 0px 15px 0px 0px
 
         color: var(--white)
 
@@ -29,7 +28,22 @@
 
             content: url(../img/icon/iconmonstr-book-15.svg)
     
-    &_share
+    //&_read-later
+        color: var(--primary)
+        
+        border: 2px solid var(--primary)
+
+        //&::after
+            position: absolute
+            top: 5px
+            left: 85px
+            
+            width: 20px
+            height: 20px
+
+            content: url(../img/icon/iconmonstr-book-4.svg)
+
+    //&_share
         margin: 0px 15px 0px 0px
 
         color: var(--white)
@@ -46,30 +60,15 @@
 
             content: url(../img/icon/iconmonstr-share-1.svg)
     
-    &_read-later
-        color: var(--primary)
-        
-        border: 2px solid var(--primary)
-
-        //&::after
-            position: absolute
-            top: 5px
-            left: 85px
-            
-            width: 20px
-            height: 20px
-
-            content: url(../img/icon/iconmonstr-book-4.svg)
-
 @media (max-width: 480px)
     .button
         width: auto
 
-        &_read-on
+        //&_read-on
             margin: 0px 0px 15px
 
-        &_share
+        //&_share
             margin: 0px 0px 15px
 
-        &_read-later
+        //&_read-later
             

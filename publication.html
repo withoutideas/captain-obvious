@@ -9,30 +9,41 @@
 </head>
 <body class="page">
     <header class="page__header header">
-        <a href="index.html" class="header__logo">Captain obvious</a>
-        
-        <div class="header__menu">
-            <!-- <img src="../img/icon/iconmonstr-menu-1.svg" alt=""> -->
-        </div>
+        <a class="header__logo" href="index.html">Captain obvious</a>
 
         <nav class="header__nav nav">
-            <ul class="nav__list">
-                <li class="nav__item nav__item_list">
-                    <div class="nav__button nav__button_list">
-                        <div class="">Authors</div>
-                    </div>
-                    <ul class="nav__list">
+            <button class="nav__button nav__button_menu" type="button" id="menu-button">
+                <svg class="nav__icon" width="20px" height="20px">
+                    <use class="nav__icon_menu" href="../img/icon/icon-nav-sprite.svg#menu"></use>
+                    <use class="nav__icon_x-mark" href="../img/icon/icon-nav-sprite.svg#x-mark"></use>
+                </svg>
+            </button>
+
+            <ul class="nav__list" id="menu-list">
+                <li class="nav__item">
+                    <span>Authors</span>
+
+                    <button class="nav__button nav__button_list" type="button" id="authors-button">
+                        <svg class="nav__icon" width="20px" height="20px" id="authors-icon">
+                            <use class="" href="../img/icon/icon-nav-sprite.svg#arrow"></use>
+                        </svg>
+                    </button>
+
+                    <ul class="nav__list" id="authors-list">
                         <li class="nav__item"><a class="nav__link" href="#">Alexandra Izotova</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Alex Zinchenko</a></li>
                     </ul>
                 </li>
 
-                <li class="nav__item nav__item_list">
-                    <div class="nav__button nav__button_list">
-                        <div class="">Categories</div>
-                    </div>
+                <li class="nav__item">
+                    <span>Categories</span>
 
-                    <ul class="nav__list">
+                    <button class="nav__button nav__button_list" type="button" id="categories-button">
+                        <svg class="nav__icon" width="20px" height="20px" id="categories-icon">
+                            <use class="" href="../img/icon/icon-nav-sprite.svg#arrow"></use>
+                        </svg>
+                    </button>
+
+                    <ul class="nav__list" id="categories-list">
                         <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
                         <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
                         <li class="nav__item"><a class="nav__link" href="#">Category</a></li>
@@ -40,15 +51,23 @@
                 </li>
 
                 <li class="nav__item">
-                    <div class="nav__button nav__button_theme">
-                        <div class="">Theme</div>
-                    </div>
+                    <span>Theme</span>
+
+                    <button class="nav__button nav__button_theme" type="button" id="theme-button">
+                        <svg class="nav__icon" width="20px" height="20px" id="theme-icon">
+                            <use class="" href="../img/icon/icon-nav-sprite.svg#theme"></use>
+                        </svg>
+                    </button>
                 </li>
 
                 <li class="nav__item">
-                    <div class="nav__button nav__button_share">
-                        <a class="">Ukrainian</a>
-                    </div>
+                    <span>Ukrainian</span>
+
+                    <a class="nav__button nav__button_link" href="#">
+                        <svg class="nav__icon" width="20px" height="20px">
+                            <use class="" href="../img/icon/icon-nav-sprite.svg#share"></use>
+                        </svg>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -60,8 +79,8 @@
             </h1>
 
             <div class="meta">
-                <div class="meta__tag">By <a class="meta__link" href="#">Madison Barnett</a></div>
-                <div class="meta__tag">In <a class="meta__link" href="#">Business</a></div>
+                <div class="meta__tag">By Alexandra Izotova</div>
+                <div class="meta__tag">In Business</div>
                 <div class="meta__tag">24 Marh 2020</div>
             </div>
 
@@ -139,9 +158,9 @@
                 </p>
             </div>
 
-            <div class="publication__button">
+            <!-- <div class="publication__button">
                 <a href="#" class="button button_share">Share</a>
-            </div>
+            </div> -->
         </article>
     </main>
     <footer class="footer">
