@@ -13,7 +13,7 @@
 
         <nav class="header__nav nav">
             <button class="nav__button nav__button_menu" type="button" id="menu-button">
-                <svg class="nav__icon" width="20px" height="20px">
+                <svg class="nav__icon">
                     <use class="nav__icon_menu" href="img/icon/icon-nav-sprite.svg#menu"></use>
                     <use class="nav__icon_x-mark" href="img/icon/icon-nav-sprite.svg#x-mark"></use>
                 </svg>
@@ -21,11 +21,11 @@
 
             <ul class="nav__list" id="menu-list">
                 <li class="nav__item">
-                    <span>Authors</span>
+                    <span class="nav__item-text">Authors</span>
 
-                    <button class="nav__button nav__button_list" type="button" id="authors-button">
-                        <svg class="nav__icon" width="20px" height="20px" id="authors-icon">
-                            <use class="" href="img/icon/icon-nav-sprite.svg#arrow"></use>
+                    <button class="nav__button" type="button" id="authors-button">
+                        <svg class="nav__icon" id="authors-icon">
+                            <use href="img/icon/icon-nav-sprite.svg#arrow"></use>
                         </svg>
                     </button>
 
@@ -35,11 +35,11 @@
                 </li>
 
                 <li class="nav__item">
-                    <span>Categories</span>
+                    <span class="nav__item-text">Categories</span>
 
-                    <button class="nav__button nav__button_list" type="button" id="categories-button">
-                        <svg class="nav__icon" width="20px" height="20px" id="categories-icon">
-                            <use class="" href="img/icon/icon-nav-sprite.svg#arrow"></use>
+                    <button class="nav__button" type="button" id="categories-button">
+                        <svg class="nav__icon" id="categories-icon">
+                            <use href="img/icon/icon-nav-sprite.svg#arrow"></use>
                         </svg>
                     </button>
 
@@ -51,21 +51,21 @@
                 </li>
 
                 <li class="nav__item">
-                    <span>Theme</span>
+                    <span class="nav__item-text">Theme</span>
 
-                    <button class="nav__button nav__button_theme" type="button" id="theme-button">
-                        <svg class="nav__icon" width="20px" height="20px" id="theme-icon">
-                            <use class="" href="img/icon/icon-nav-sprite.svg#theme"></use>
+                    <button class="nav__button" type="button" id="theme-button">
+                        <svg class="nav__icon" id="theme-icon">
+                            <use href="img/icon/icon-nav-sprite.svg#theme"></use>
                         </svg>
                     </button>
                 </li>
 
                 <li class="nav__item">
-                    <span>Ukrainian</span>
+                    <span class="nav__item-text">Українська</span>
 
-                    <a class="nav__button nav__button_link" href="#">
-                        <svg class="nav__icon" width="20px" height="20px">
-                            <use class="" href="img/icon/icon-nav-sprite.svg#share"></use>
+                    <a class="nav__button" href="#">
+                        <svg class="nav__icon">
+                            <use href="img/icon/icon-nav-sprite.svg#share"></use>
                         </svg>
                     </a>
                 </li>
@@ -73,7 +73,7 @@
         </nav>
     </header>
     <main class="main">
-        <article class="main__content publication">
+        <article class="main__wrapper publication">
             <h1 class="publication__title">
                 Knights, I bid you welcome to your new home
             </h1>
@@ -158,15 +158,11 @@
                     efficient supply chains.
                 </p>
             </div>
-
-            <!-- <div class="publication__button">
-                <a href="#" class="button button_share">Share</a>
-            </div> -->
         </article>
     </main>
     <footer class="footer">
-        <a href="#" class="footer__link footer__link_instagram">Alexandra Izotova</a>
-        <a href="#" class="footer__link footer__link_facebook">Alexandra Izotova</a>
+        <a class="footer__link footer__link_instagram" href="#">Alexandra Izotova</a>
+        <a class="footer__link footer__link_facebook" href="#">Alexandra Izotova</a>
     </footer>
     
     <script src="js/script.js"></script>

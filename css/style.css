@@ -76,11 +76,11 @@ html[data-theme="dark"] {
 }
 
 .main {
-  min-height: calc(100vh);
-  padding: 130px 8% 0px;
+  min-height: 100vh;
+  padding: 110px 8% 0px;
 }
 
-.main__content {
+.main__wrapper {
   max-width: 720px;
   margin: 0px auto;
 }
@@ -94,7 +94,7 @@ html[data-theme="dark"] {
 }
 
 .publication {
-  margin: 0px 0px 40px;
+  margin-bottom: 40px;
 }
 
 .publication__title {
@@ -137,10 +137,6 @@ html[data-theme="dark"] {
   display: block;
   width: 100%;
   margin: 0px 0px 20px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 @media (max-width: 480px) {
@@ -152,6 +148,66 @@ html[data-theme="dark"] {
   }
   .publication__content h3 {
     font-size: 20px;
+  }
+}
+
+.excerpt {
+  position: relative;
+  padding: 60px 0px;
+}
+
+.excerpt__title {
+  margin: 0px;
+  font-size: 48px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--darkgray);
+}
+
+.excerpt p {
+  margin: 0px;
+}
+
+.excerpt__button {
+  display: block;
+  width: 145px;
+  height: 40px;
+  margin: 20px 0px 0px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 36px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.excerpt::before {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  display: block;
+  content: "";
+  width: 50px;
+  height: 2px;
+  margin: 0px 0px 0px -25px;
+  background-color: var(--lightgray);
+}
+
+@media (max-width: 480px) {
+  .excerpt {
+    padding: 50px 0px;
+  }
+  .excerpt__title {
+    font-size: 27px;
+  }
+  .excerpt__button {
+    width: 100%;
   }
 }
 
@@ -173,7 +229,7 @@ html[data-theme="dark"] {
 
 .meta__tag::after {
   position: relative;
-  right: -5px;
+  right: -4px;
   content: "/";
   display: inline-block;
   height: 14px;
@@ -188,72 +244,9 @@ html[data-theme="dark"] {
   display: none;
 }
 
-.publication-preview {
-  position: relative;
-  padding: 60px 0px;
-}
-
-.publication-preview__title {
-  margin: 0px;
-  font-size: 48px;
-  line-height: 1.2;
-  text-transform: uppercase;
-  color: var(--darkgray);
-}
-
-.publication-preview p {
-  margin: 0px;
-}
-
-.publication-preview__button {
-  display: block;
-  width: 145px;
-  height: 40px;
-  margin: 20px 0px 0px;
-  font-size: 17px;
-  line-height: 36px;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--primary);
-  border: 2px solid var(--primary);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.publication-preview::before {
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  display: block;
-  content: "";
-  width: 50px;
-  height: 2px;
-  margin: 0px 0px 0px -25px;
-  background-color: var(--lightgray);
-}
-
-@media (max-width: 480px) {
-  .publication-preview {
-    padding: 50px 0px;
-  }
-  .publication-preview__title {
-    font-size: 27px;
-  }
-  .publication-preview__button {
-    width: 100%;
-  }
-}
-
 .nav {
   width: 100%;
   padding: 0px 8%;
-  font-size: 17px;
-  line-height: 40px;
-  text-transform: uppercase;
-  color: var(--white);
   background-color: var(--primary);
 }
 
@@ -274,6 +267,18 @@ html[data-theme="dark"] {
 
 .nav__item {
   position: relative;
+  font-size: 17px;
+  line-height: 40px;
+  color: var(--white);
+}
+
+.nav__item-text {
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .nav__link {
@@ -306,6 +311,8 @@ html[data-theme="dark"] {
   position: absolute;
   top: 10px;
   left: 10px;
+  width: 20px;
+  height: 20px;
   fill: var(--white);
 }
 
@@ -341,6 +348,7 @@ html[data-theme="dark"] {
   position: relative;
   display: inline-block;
   margin: 0px 0px 0px 30px;
+  font-size: 17px;
   line-height: 40px;
   color: var(--white);
 }
@@ -349,17 +357,16 @@ html[data-theme="dark"] {
   position: absolute;
   top: 10px;
   left: -30px;
+  content: "";
   width: 20px;
   height: 20px;
 }
 
 .footer__link_instagram::after {
-  content: "";
   background-image: url(../img/icon/iconmonstr-instagram-11.svg);
 }
 
 .footer__link_facebook::after {
-  content: "";
   background-image: url(../img/icon/iconmonstr-facebook-1.svg);
 }
 /*# sourceMappingURL=style.css.map */
