@@ -80,4 +80,33 @@
 
 @media (min-width: 480px)
     .nav
-        width: 360px
+        //display: iline-block
+        width: auto
+        padding: 0px
+
+        //background-color: transparent
+
+        &__list
+            dispaly: block
+            //background-color: var(--primary)
+            padding: 0px
+
+        &__list .nav__list
+            position: absolute
+            top: 70px
+            left: 0px
+
+            width: 200px
+            background-color: var(--primary)
+
+        &__item
+            display: inline-block
+            //text-align: right
+            
+        &__item-text
+            margin: 0px 50px 0px 0px
+        
+        &__link
+            display: block
+            margin: 0px
+            //padding: 0px 10px

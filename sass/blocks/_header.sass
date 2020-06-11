@@ -10,9 +10,11 @@
     justify-content: space-between
 
     &__logo
-        font-size: 19px
-        line-height: 40px
+        display: block
+        
+        font-size: 18px
         font-weight: bold
+        line-height: 40px
         text-transform: uppercase
         text-decoration: none
         color: var(--white)
@@ -22,16 +24,12 @@
         top: 70px
         left: 0px
 
-@media (max-width: 480px)
-    //.header
-        
-        &__logo
-            width: 80px
-            font-size: 12
-
 @media (min-width: 480px)
     .header
+        //flex-direction: row
         
+        &__logo
+            //font-size: 12
+
         &__nav
-            left: auto
-            right: 0px
+            position: static

@@ -1,2 +1,3 @@
-tasks
-fonts
+tasks.txt
+sass/*
+js/ref.js
