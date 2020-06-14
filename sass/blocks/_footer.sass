@@ -5,13 +5,30 @@
     
     background-color: var(--primary)
 
+/* List */
+
+.footer__list
+    margin: 0px
+    padding: 0px
+    
+    font-size: 0
+
+    list-style-type: none
+
+/* item */
+
+@media (min-width: 992px)
+    .footer__item
+        display: inline-block
+        padding: 0px 20px 0px 0px
+
 /* Link */
 
 .footer__link
     position: relative
 
     display: inline-block
-    margin: 0px 0px 0px 30px
+    margin: 0px 0px 0px 35px
 
     color: var(--white)
     font-size: 17px
@@ -20,7 +37,7 @@
 .footer__link::after
     position: absolute
     top: 10px
-    left: -30px
+    left: -35px
 
     content: ""
     width: 20px

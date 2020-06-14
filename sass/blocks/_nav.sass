@@ -3,9 +3,9 @@
 .nav
     background-color: var(--primary)
 
-    user-select: none
+    //user-select: none
 
-@media (max-width: 480px)
+@media (max-width: 992px)
     .nav
         width: 100%
         padding: 0px 8%
@@ -14,29 +14,51 @@
 
 .nav__list
     margin: 0px
-    margin: 0px
+    padding: 0px
+
+    font-size: 0
 
     list-style-type: none
 
-.nav__list .nav__list
-    padding: 0px
-           
-.nav__list_active
-    display: block
-
-@media (max-width: 480px)
+@media (max-width: 992px)
     .nav__list
         display: none
         padding: 0px 0px 20px
 
+    .nav__list_active
+        display: block
+
+@media (min-width: 992px)
+    .nav__list .nav__list
+        position: absolute
+        top: 55px
+        right: -35px
+
+        display: none
+
+        background-color: var(--primary)
+
+    .nav__list .nav__list_active
+        display: block
+
 /* Item */
-    
+
 .nav__item
     position: relative
     
     color: var(--white)
     font-size: 17px
     line-height: 40px
+
+@media (min-width: 992px)
+    .nav__item
+        display: inline-block
+        margin: 0px 55px 0px 0px
+        
+    .nav__item .nav__item
+        display: block
+        margin: 0px
+        padding: 10px 30px
 
 /* Item-text */
 
@@ -52,8 +74,9 @@
 
     color: var(--white)
     text-transform: none
+    white-space: nowrap
 
-@media (max-width: 480px)
+@media (max-width: 992px)
     .nav__link
         margin: 0px 0px 0px 30px
 
@@ -61,8 +84,6 @@
 
 .nav__button
     position: absolute
-    top: 0px
-    right: -10px
 
     display: block
     width: 40px
@@ -73,9 +94,25 @@
     border: none
     background-color: transparent
 
-.nav__button_menu
-    top: -55px
-    right: calc(8% - 10px)
+
+@media (max-width: 992px)
+    .nav__button
+        top: 0px
+        right: -10px
+        
+    .nav__button_menu
+        top: -55px
+        right: calc(8% - 10px)
+
+@media (min-width: 992px)
+    .nav__button
+        top: 0px
+        right: -45px
+
+        cursor: pointer
+
+    .nav__button_menu
+        display: none
 
 /* Icon */
 

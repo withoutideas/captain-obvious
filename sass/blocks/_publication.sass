@@ -25,49 +25,45 @@
 .publication__content
     margin: 0px 0px 40px
     
-    & h2
-        margin: 40px 0px 20px
+.publication__content p
+    margin: 20px 0px
+
+.publication__content h2
+    margin: 40px 0px 20px
+    
+    color: var(--darkgray)
+    line-height: 1.2
+    text-transform: uppercase
+
+.publication__content h3
+    margin: 40px 0px 20px
+    
+    color: var(--darkgray)
+    line-height: 1.2
+    text-transform: uppercase
+
+.publication__content h2 + h3
+    margin: 20px 0px
         
-        color: var(--darkgray)
-        line-height: 1.2
-        text-transform: uppercase
+.publication__content img
+    display: block
+    width: 100%
+    margin: 0px 0px 20px
 
-    & h3
-        margin: 40px 0px 20px
-        
-        color: var(--darkgray)
-        line-height: 1.2
-        text-transform: uppercase
-
-    & h2 + h3
-        margin: 20px 0px
-        
-    & p
-        margin: 20px 0px
-
-    & a
-        color: var(--primary)
-        text-decoration: none
-
-    & img
-        display: block
-        width: 100%
-        margin: 0px 0px 20px
+.publication__content a
+    color: var(--primary)
+    text-decoration: none
 
 @media (max-width: 480px)
-    .publication__content
+    .publication__content h2
+        font-size: 25px
         
-        & h2
-            font-size: 25px
-        
-        & h3
-            font-size: 20px
+    .publication__content h3
+        font-size: 20px
 
 @media (min-width: 480px)
-    .publication__content
+    .publication__content h2
+        font-size: 35px
         
-        & h2
-            font-size: 35px
-        
-        & h3
-            font-size: 28px
+    .publication__content h3
+        font-size: 28px
