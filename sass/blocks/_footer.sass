@@ -1,35 +1,33 @@
+/* Footer */
+
 .footer
     padding: 15px 8%
-
+    
     background-color: var(--primary)
 
-    &__link
-        position: relative
-        display: inline-block
-        margin: 0px 0px 0px 30px
+/* Link */
 
-        font-size: 17px
-        line-height: 40px
-        color: var(--white)
+.footer__link
+    position: relative
 
-        &::after
-            position: absolute
-            top: 10px
-            left: -30px
+    display: inline-block
+    margin: 0px 0px 0px 30px
 
-            content: ""
-            
-            width: 20px
-            height: 20px
+    color: var(--white)
+    font-size: 17px
+    line-height: 40px
 
-        &_instagram::after
-            background-image: url(../img/icon/iconmonstr-instagram-11.svg)
+.footer__link::after
+    position: absolute
+    top: 10px
+    left: -30px
 
-        &_facebook::after
-            background-image: url(../img/icon/iconmonstr-facebook-1.svg)
+    content: ""
+    width: 20px
+    height: 20px
 
-@media (min-width: 480px)
-    .footer
+.footer__link_instagram::after
+    background-image: url(../img/icon/iconmonstr-instagram-11.svg)
 
-        &__link
-            margin: 0px 0px 0px 60px
+.footer__link_facebook::after
+    background-image: url(../img/icon/iconmonstr-facebook-1.svg)

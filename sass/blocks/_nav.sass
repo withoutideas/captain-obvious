@@ -1,112 +1,104 @@
-.nav
-    width: 100%
-    padding: 0px 8%
+/* Nav */
 
+.nav
     background-color: var(--primary)
 
-    &__list
-        margin: 0px
-        padding: 0px 0px 20px
+    user-select: none
 
-        list-style-type: none
-        display: none
+@media (max-width: 480px)
+    .nav
+        width: 100%
+        padding: 0px 8%
 
-        & .nav__list
-            padding: 0px
-            
-        &_active
-            display: block
+/* List */
 
-    &__item
-        position: relative
-        
-        font-size: 17px
-        line-height: 40px
-        color: var(--white)
+.nav__list
+    margin: 0px
+    margin: 0px
 
-    &__item-text
-            font-weight: bold
-            text-transform: uppercase
-            
-            user-select: none
-        
-    &__link
-        display: inline-block
-        height: 40px
-        margin: 0px 0px 0px 30px
+    list-style-type: none
 
-        text-transform: none
-        color: var(--white)
-
-    &__button
-        position: absolute
-        top: 0px
-        right: -10px
-
-        display: block
-        width: 40px
-        height: 40px
-        margin: 0px
-        padding: 0px
-        border: none
-        
-        background-color: transparent
-
-        &_menu
-            top: -55px
-            right: calc(8% - 10px)
-
-    &__icon
-        position: absolute
-        top: 10px
-        left: 10px
-
-        width: 20px
-        height: 20px
-
-        fill: var(--white)
-
-        &_list_active
-            transform: rotate(180deg)
-        
-        &_theme_active
-            fill: var(--black)
-
-.nav__icon_menu, .nav__button_active .nav__icon_x-mark
+.nav__list .nav__list
+    padding: 0px
+           
+.nav__list_active
     display: block
 
-.nav__icon_x-mark, .nav__button_active .nav__icon_menu
-    display: none
+@media (max-width: 480px)
+    .nav__list
+        display: none
+        padding: 0px 0px 20px
 
-@media (min-width: 480px)
-    .nav
-        //display: iline-block
-        width: auto
-        padding: 0px
+/* Item */
+    
+.nav__item
+    position: relative
+    
+    color: var(--white)
+    font-size: 17px
+    line-height: 40px
 
-        //background-color: transparent
+/* Item-text */
 
-        &__list
-            dispaly: block
-            //background-color: var(--primary)
-            padding: 0px
+.nav__item-text
+    text-transform: uppercase
+    font-weight: bold
 
-        &__list .nav__list
-            position: absolute
-            top: 70px
-            left: 0px
+/* Link */
 
-            width: 200px
-            background-color: var(--primary)
+.nav__link
+    display: inline-block
+    height: 40px
 
-        &__item
-            display: inline-block
-            //text-align: right
-            
-        &__item-text
-            margin: 0px 50px 0px 0px
+    color: var(--white)
+    text-transform: none
+
+@media (max-width: 480px)
+    .nav__link
+        margin: 0px 0px 0px 30px
+
+/* Button */
+
+.nav__button
+    position: absolute
+    top: 0px
+    right: -10px
+
+    display: block
+    width: 40px
+    height: 40px
+    margin: 0px
+    padding: 0px
+
+    border: none
+    background-color: transparent
+
+.nav__button_menu
+    top: -55px
+    right: calc(8% - 10px)
+
+/* Icon */
+
+.nav__icon
+    position: absolute
+    top: 10px
+    left: 10px
+
+    width: 20px
+    height: 20px
+
+    fill: var(--white)
+
+.nav__icon_list_active
+    transform: rotate(180deg)
         
-        &__link
-            display: block
-            margin: 0px
-            //padding: 0px 10px
+.nav__icon_theme_active
+    fill: var(--black)
+
+.nav__icon_menu,
+.nav__button_active .nav__icon_x-mark
+    display: block
+
+.nav__icon_x-mark,
+.nav__button_active .nav__icon_menu
+    display: none

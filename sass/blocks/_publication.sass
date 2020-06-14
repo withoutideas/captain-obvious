@@ -1,54 +1,73 @@
+/* Publication */
+
 .publication
-    margin-bottom: 40px
 
-    &__title
-        margin: 0px
-        
+/* Title */
+    
+.publication__title
+    margin: 0px
+    
+    color: var(--darkgray)
+    font-size: 27px
+    line-height: 1.2
+    text-transform: uppercase
+
+@media (max-width: 480px)
+    .publication__title
         font-size: 27px
-        line-height: 1.2
-        text-transform: uppercase
-        color: var(--darkgray)
 
-    &__content h2
+@media (min-width: 480px)
+    .publication__title
+        font-size: 48px
+
+/* Content */
+
+.publication__content
+    margin: 0px 0px 40px
+    
+    & h2
         margin: 40px 0px 20px
         
-        font-size: 25px
+        color: var(--darkgray)
         line-height: 1.2
         text-transform: uppercase
-        color: var(--darkgray)
 
-    &__content h3
+    & h3
         margin: 40px 0px 20px
         
-        font-size: 20px
+        color: var(--darkgray)
         line-height: 1.2
         text-transform: uppercase
-        color: var(--darkgray)
 
-    &__content h2 + h3
+    & h2 + h3
         margin: 20px 0px
         
-    &__content p
+    & p
         margin: 20px 0px
 
-    &__content a
+    & a
+        color: var(--primary)
         text-decoration: none
 
-    &__content img
+    & img
         display: block
         width: 100%
         margin: 0px 0px 20px
 
-@media (min-width: 480px)
-    .publication
+@media (max-width: 480px)
+    .publication__content
         
-        &__title
-            font-size: 48px
-            //line-height: 1.2
+        & h2
+            font-size: 25px
+        
+        & h3
+            font-size: 20px
 
-        &__content h2
-            font-size: 35px
-            //line-height:
+@media (min-width: 480px)
+    .publication__content
         
-        &__content h3
+        & h2
+            font-size: 35px
+        
+        & h3
             font-size: 28px

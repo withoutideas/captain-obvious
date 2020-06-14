@@ -1,29 +1,31 @@
+/* Meta */
+
 .meta
     display: flex
+    flex-wrap: wrap
     margin: 5px 0px 15px
 
-    flex-wrap: wrap
+/* Tag */
+    
+.meta__tag
+    margin: 0px 10px 0px 0px
 
-    &__tag
-        margin: 0px 10px 0px 0px
+    color: var(--lightgray)
+    font-size: 15px
+    line-height: 1.5
 
-        font-size: 15px
-        line-height: 1.5
-        color: var(--lightgray)
+.meta__tag::after
+    position: relative
+    right: -4px
+    
+    content: "/"
+    display: inline-block
+    height: 14px
+    
+    overflow: hidden
 
-        &::after
-            position: relative
-            right: -4px
-            
-            content: "/"
-
-            display: inline-block
-            height: 14px
-
-            overflow: hidden
-
-        &:last-child
-            margin: 0px
+.meta__tag:last-child
+    margin: 0px
         
-            &::after
-                display: none
+.meta__tag:last-child::after
+    display: none

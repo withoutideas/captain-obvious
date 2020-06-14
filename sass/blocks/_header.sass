@@ -1,35 +1,28 @@
+/* Header */
+
 .header
     display: flex
+    justify-content: space-between
+    align-items: center
     width: 100%
     height: 70px
     padding: 0px 8%
 
     background-color: var(--primary)
 
-    align-items: center
-    justify-content: space-between
+/* Logo */
 
-    &__logo
-        display: block
-        
-        font-size: 18px
-        font-weight: bold
-        line-height: 40px
-        text-transform: uppercase
-        text-decoration: none
-        color: var(--white)
-    
-    &__nav
-        position: absolute
-        top: 70px
-        left: 0px
+.header__logo
+    color: var(--white)
+    text-decoration: none
+    font-size: 18px
+    line-height: 40px
+    text-transform: uppercase
+    font-weight: bold
 
-@media (min-width: 480px)
-    .header
-        //flex-direction: row
-        
-        &__logo
-            //font-size: 12
+/* Nav */
 
-        &__nav
-            position: static
+.header__nav
+    position: absolute
+    top: 70px
+    left: 0px
