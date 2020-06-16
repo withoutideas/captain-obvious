@@ -2,20 +2,43 @@
 
 .main
     min-height: 100vh
-    padding: 110px 8% 0px
 
-/* Wrapper */
+@media (max-width: 480px)
+    .main
+        padding: 120px 8% 0px
 
-.main__wrapper
+@media (min-width: 481px) and (max-width: 991px)
+    .main
+        padding: 125px 8% 0px
+
+@media (min-width: 992px)
+    .main
+        padding: 130px 8% 0px
+
+/* Focus */
+
+.main__focus
     max-width: 720px
     margin: 0px auto
 
 /* Title */
 
 .main__title
-    margin: 0px 0px 40px
-
     color: var(--lightgray)
     text-align: center
     font-size: 17px
     text-transform: uppercase
+
+    user-select: none
+
+@media (max-width: 480px)
+    .main__title
+        margin: 0px 0px 50px
+
+@media (min-width: 481px) and (max-width: 991px)
+    .main__title
+        margin: 0px 0px 55px
+
+@media (min-width: 992px)
+    .main__title
+        margin: 0px 0px 60px
