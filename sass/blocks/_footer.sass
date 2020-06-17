@@ -1,6 +1,9 @@
 /* Footer */
 
 .footer
+    display: flex
+    justify-content: space-between
+    align-items: center
     padding: 15px 8%
     
     background-color: var(--primary)
@@ -17,36 +20,39 @@
     
     list-style-type: none
 
-/* item */
+/* Item */
+
+.footer__item
+    position: relative
+    margin: 0px 0px 0px 35px
 
 @media (min-width: 992px)
     .footer__item
         display: inline-block
-        margin: 0px 20px 0px 0px
+        margin: 0px 20px 0px 35px
 
 /* Link */
 
 .footer__link
-    position: relative
-
     display: inline-block
-    margin: 0px 0px 0px 35px
 
     color: var(--white)
     font-size: 17px
     line-height: 40px
 
-.footer__link::after
+.footer__icon
     position: absolute
     top: 10px
     left: -35px
 
-    content: ""
+    //content: ""
     width: 20px
     height: 20px
 
-.footer__link_instagram::after
-    background-image: url(../img/icon/iconmonstr-instagram-11.svg)
+    fill: var(--white)
+
+//.footer__link_instagram::after
+    //background-image: url(../img/icon/iconmonstr-instagram-11.svg)
 
 .footer__link_facebook::after
     background-image: url(../img/icon/iconmonstr-facebook-1.svg)

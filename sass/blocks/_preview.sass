@@ -1,0 +1,87 @@
+/* Preview */
+
+.preview
+    position: relative
+    
+    max-width: 720px
+    
+.preview::before
+    position: absolute
+    top: 0px
+    left: 50%
+
+    content: ""
+    display: block
+    width: 50px
+    height: 2px
+    margin: 0px 0px 0px -25px
+
+    background-color: var(--lightgray)
+
+.preview:nth-child(2)::before
+    display: none
+
+@media (max-width: 480px)
+    .preview
+        padding: 50px 0px
+
+@media (min-width: 481px) and (max-width: 991px)
+    .preview
+        padding: 55px 0px
+
+@media (min-width: 992px)
+    .preview
+        padding: 60px 0px
+
+/* Title */
+
+.preview__title
+    margin: 0px
+    
+    color: var(--darkgray)
+    line-height: 1.2
+    text-transform: uppercase
+
+@media (max-width: 480px)
+    .preview__title
+        font-size: 27px
+
+@media (min-width: 481px) and (max-width: 991px)
+    .preview__title
+        font-size: 37px
+
+@media (min-width: 992px)
+    .preview__title
+        font-size: 47px
+
+/* Text */
+
+.preview__text
+    margin: 0px
+
+/* Button */
+
+.preview__button
+    display: block
+    height: 40px
+    margin: 20px 0px 0px
+        
+    color: var(--primary)
+    text-decoration: none
+    text-align: center
+    font-size: 17px
+    line-height: 36px
+    text-transform: uppercase
+    font-weight: bold
+
+    border: 2px solid var(--primary)
+    
+    user-select: none
+
+@media (max-width: 480px)
+    .preview__button
+        width: 100%
+
+@media (min-width: 992px)
+    .preview__button
+        width: 145px

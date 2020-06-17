@@ -15,73 +15,69 @@ const themeIcon = document.getElementById('theme-icon');
 menuButton.addEventListener('click', () => {
     menuButton.classList.toggle('nav__button_active');
     menuList.classList.toggle('nav__list_active');
+
+    authorsList.classList.remove('nav__list_active');
+    authorsIcon.classList.remove('nav__icon_list_active');
+    
+    categoriesList.classList.remove('nav__list_active');
+    categoriesIcon.classList.remove('nav__icon_list_active');
+});
+
+window.addEventListener('scroll', () => {
+    menuButton.classList.remove('nav__button_active');
+    menuList.classList.remove('nav__list_active');
+
+    authorsList.classList.remove('nav__list_active');
+    authorsIcon.classList.remove('nav__icon_list_active');
+    
+    categoriesList.classList.remove('nav__list_active');
+    categoriesIcon.classList.remove('nav__icon_list_active');
 });
 
 authorsButton.addEventListener('click', () => {
-    authorsButton.classList.toggle('nav__button_active');
     authorsList.classList.toggle('nav__list_active');
     authorsIcon.classList.toggle('nav__icon_list_active');
 });
 
 categoriesButton.addEventListener('click', () => {
-    categoriesButton.classList.toggle('nav__button_active');
     categoriesList.classList.toggle('nav__list_active');
     categoriesIcon.classList.toggle('nav__icon_list_active');
 });
 
+// check for saved 'darkMode' in localStorage
+let darkMode = localStorage.getItem('darkMode'); 
+
+const enableDarkMode = () => {
+    // 1. Add the class to the body
+    document.body.classList.add('darkmode');
+    // 2. Update darkMode in localStorage
+    localStorage.setItem('darkMode', 'enabled');
+}
+
+const disableDarkMode = () => {
+    // 1. Remove the class from the body
+    document.body.classList.remove('darkmode');
+    // 2. Update darkMode in localStorage 
+    localStorage.setItem('darkMode', null);
+}
+ 
+// If the user already visited and enabled darkMode
+// start things off with it on
+if (darkMode === 'enabled') {
+    enableDarkMode();
+}
+
+// When someone clicks the button
 themeButton.addEventListener('click', () => {
-    themeButton.classList.toggle('nav__button_active');
     themeIcon.classList.toggle('nav__icon_theme_active');
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* const menuToggle = document.querySelector(".header__menu");
-const nav = document.querySelector(".nav");
-const menuButton = document.querySelector(".menu-button");
-
-menuToggle.addEventListener("click", () => {
-
-    nav.classList.toggle("nav_active");
-    menuToggle.classList.toggle("header__menu_active");
-
-});
-
-document.querySelector(".main").addEventListener("click", () => {
-
-    nav.classList.remove("nav_active");
-    menuToggle.classList.remove("header__menu_active");
-
-});
-
-nav.addEventListener("click", function(event) {
-
-    const navItem = event.target.closest(".nav__item_list");
-    const navButton = event.target.closest(".nav__button");
-
-    if (navButton && navItem) {
-        navItem.classList.toggle("nav__item_list_active");
-        navButton.classList.toggle("nav__button_active");
-
+    // get their darkMode setting
+    darkMode = localStorage.getItem('darkMode'); 
+    
+    // if it not current enabled, enable it
+    if (darkMode !== 'enabled') {
+        enableDarkMode();
+    // if it has been enabled, turn it off  
+    } else {  
+        disableDarkMode(); 
     }
 });
-
-const navButton = nav.querySelector(".nav__button_theme");
-
-navButton.addEventListener("click", function(event) {
-
-        navButton.classList.toggle("nav__button_active");
-}); */
