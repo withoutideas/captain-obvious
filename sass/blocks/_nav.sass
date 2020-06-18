@@ -43,6 +43,7 @@
 
     .nav__list .nav__list_active
         display: block
+        padding: 10px 0px
 
 /* Item */
 
@@ -63,7 +64,7 @@
     .nav__item .nav__item
         display: block
         margin: 0px
-        padding: 10px 35px
+        padding: 0px 35px
 
 /* Link */
 
@@ -93,7 +94,6 @@
 
     border: none
     background-color: transparent
-
 
 @media (max-width: 992px)
     .nav__button
@@ -126,12 +126,6 @@
 
     fill: var(--white)
 
-.nav__icon_list_active
-    transform: rotate(180deg)
-        
-.nav__icon_theme_active
-    fill: var(--black)
-
 .nav__icon_menu,
 .nav__button_active .nav__icon_x-mark
     display: block
@@ -139,3 +133,7 @@
 .nav__icon_x-mark,
 .nav__button_active .nav__icon_menu
     display: none
+
+.nav__icon_active
+    transform: rotate(180deg)
+        

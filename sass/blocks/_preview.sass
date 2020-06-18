@@ -64,7 +64,6 @@
 .preview__button
     display: block
     height: 40px
-    margin: 20px 0px 0px
         
     color: var(--primary)
     text-decoration: none
@@ -81,7 +80,13 @@
 @media (max-width: 480px)
     .preview__button
         width: 100%
+        margin: 20px 0px 0px
+
+@media (min-width: 481px) and (max-width: 991px)
+    .preview__button
+        margin: 25px 0px 0px
 
 @media (min-width: 992px)
     .preview__button
         width: 145px
+        margin: 30px 0px 0px

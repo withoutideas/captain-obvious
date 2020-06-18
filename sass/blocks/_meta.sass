@@ -3,9 +3,20 @@
 .meta
     display: flex
     flex-wrap: wrap
-    margin: 5px 0px 15px
     
     user-select: none
+
+@media (max-width: 480px)
+    .meta
+        margin: 5px 0px 15px
+
+@media (min-width: 481px) and (max-width: 991px)
+    .meta
+        margin: 10px 0px 20px
+
+@media (min-width: 992px)
+    .meta
+        margin: 15px 0px 25px
 
 /* Tag */
     
